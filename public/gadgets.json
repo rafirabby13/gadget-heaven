@@ -1,0 +1,282 @@
+[
+      {
+        "product_id": "C001",
+        "product_title": "Dell XPS 13",
+        "product_image": "https://i.ibb.co.com/Z1Dhv8m/Dell-XPS-13.webp",
+        "category": "computers",
+        "price": 1200,
+        "description": "A high-performance laptop with a sleek design.",
+        "specification": ["Intel Core i7", "16GB RAM", "512GB SSD", "13-inch display"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "C002",
+        "product_title": "MacBook Pro 14",
+        "product_image": "https://i.ibb.co.com/z8Kdxvf/Mac-Book-Pro-14.png",
+        "category": "computers",
+        "price": 2000,
+        "description": "Apple's latest MacBook Pro with M1 Pro chip.",
+        "specification": ["M1 Pro chip", "16GB RAM", "1TB SSD", "14-inch Retina display"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "C003",
+        "product_title": "HP Spectre x360",
+        "product_image": "https://i.ibb.co.com/7XgHJVm/HP-Spectre-x360.jpg",
+        "category": "computers",
+        "price": 1400,
+        "description": "A versatile 2-in-1 laptop with a stunning 4K display.",
+        "specification": ["Intel Core i7", "16GB RAM", "512GB SSD", "4K touchscreen"],
+        "availability": false,
+        "rating": 4.6
+      },
+      {
+        "product_id": "C004",
+        "product_title": "Lenovo ThinkPad X1 Carbon",
+        "product_image": "https://i.ibb.co.com/Nn7Nsg4/Lenovo-Think-Pad-X1-Carbon.webp",
+        "category": "computers",
+        "price": 1600,
+        "description": "A durable and high-performance business laptop.",
+        "specification": ["Intel Core i7", "16GB RAM", "512GB SSD", "14-inch display"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "C005",
+        "product_title": "Asus ZenBook 13",
+        "product_image": "https://i.ibb.co.com/xD87b5R/Asus-Zen-Book-13.webp",
+        "category": "computers",
+        "price": 1000,
+        "description": "An ultra-slim laptop with great performance.",
+        "specification": ["AMD Ryzen 7", "8GB RAM", "256GB SSD", "13.3-inch OLED display"],
+        "availability": true,
+        "rating": 4.5
+      },
+      
+      {
+        "product_id": "P001",
+        "product_title": "iPhone 14",
+        "product_image": "https://i.ibb.co.com/h2SRr1p/appleiphone14-3.jpg",
+        "category": "phones",
+        "price": 999,
+        "description": "The latest iPhone with advanced features.",
+        "specification": ["6.1-inch display", "128GB storage", "A15 Bionic chip", "5G"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "P002",
+        "product_title": "Samsung Galaxy S22",
+        "product_image": "https://i.ibb.co.com/T0L0K1T/Samsung-Galaxy-S22.jpg",
+        "category": "phones",
+        "price": 850,
+        "description": "Samsung's flagship phone with a powerful camera.",
+        "specification": ["6.2-inch display", "256GB storage", "Exynos 2200", "5G"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "P003",
+        "product_title": "Google Pixel 6",
+        "product_image": "https://i.ibb.co.com/hKVCMdL/Google-Pixel-6.webp",
+        "category": "phones",
+        "price": 750,
+        "description": "Google's own smartphone with an excellent camera.",
+        "specification": ["6.4-inch display", "128GB storage", "Google Tensor", "5G"],
+        "availability": false,
+        "rating": 4.7
+      },
+      {
+        "product_id": "P004",
+        "product_title": "OnePlus 10 Pro",
+        "product_image": "https://i.ibb.co.com/Yb3hvny/One-Plus-10-Pro.jpg",
+        "category": "phones",
+        "price": 900,
+        "description": "High-performance smartphone with smooth software experience.",
+        "specification": ["6.7-inch display", "256GB storage", "Snapdragon 8 Gen 1", "5G"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "P005",
+        "product_title": "Xiaomi Mi 11 Ultra",
+        "product_image": "https://i.ibb.co.com/6wXmLvh/Xiaomi-Mi-11-Ultra-Ceramic-Balck-500x500.jpg",
+        "category": "phones",
+        "price": 950,
+        "description": "Flagship smartphone with a triple camera setup.",
+        "specification": ["6.8-inch display", "256GB storage", "Snapdragon 888", "5G"],
+        "availability": true,
+        "rating": 4.7
+      },
+  
+      {
+        "product_id": "SW001",
+        "product_title": "Apple Watch Series 7",
+        "product_image": "https://i.ibb.co.com/XxsQzbv/Apple-Watch-Series-7-45mm-GPS-Smartwatch.jpg",
+        "category": "smart watches",
+        "price": 399,
+        "description": "Apple's latest smartwatch with health tracking features.",
+        "specification": ["Always-on display", "Blood Oxygen sensor", "ECG app"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "SW002",
+        "product_title": "Samsung Galaxy Watch 4",
+        "product_image": "https://i.ibb.co.com/ynHkwT2/galaxy-watch4-classic-black-design-your-own.jpg",
+        "category": "smart watches",
+        "price": 279,
+        "description": "Smartwatch with advanced fitness tracking features.",
+        "specification": ["BioActive Sensor", "ECG monitoring", "Wear OS"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "SW003",
+        "product_title": "Fitbit Versa 3",
+        "product_image": "https://i.ibb.co.com/HKpPJM0/Fitbit-Versa-3.jpg",
+        "category": "smart watches",
+        "price": 229,
+        "description": "Fitbit smartwatch with built-in GPS and heart rate monitor.",
+        "specification": ["Built-in GPS", "Heart Rate Monitor", "Alexa integration"],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "SW004",
+        "product_title": "Garmin Fenix 6",
+        "product_image": "https://i.ibb.co.com/1TdpB47/Garmin-Fenix-6.jpg",
+        "category": "smart watches",
+        "price": 599,
+        "description": "Rugged smartwatch designed for outdoor adventures.",
+        "specification": ["GPS", "Heart Rate Sensor", "TOPO maps"],
+        "availability": false,
+        "rating": 4.6
+      },
+      {
+        "product_id": "SW005",
+        "product_title": "Amazfit GTS 2",
+        "product_image": "https://i.ibb.co.com/py55mdf/Amazfit-GTS-2.jpg",
+        "category": "smart watches",
+        "price": 179,
+        "description": "Budget-friendly smartwatch with various health tracking features.",
+        "specification": ["AMOLED display", "Heart Rate Monitor", "Oxygen level monitor"],
+        "availability": true,
+        "rating": 4.4
+      },
+  
+      {
+        "product_id": "CH001",
+        "product_title": "Anker PowerPort III",
+        "product_image": "https://i.ibb.co.com/0nLWyj6/Anker-Power-Port-III.jpg",
+        "category": "chargers",
+        "price": 30,
+        "description": "High-speed USB-C charger for phones and laptops.",
+        "specification": ["65W", "USB-C Power Delivery", "Compact size"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "CH002",
+        "product_title": "Apple 20W USB-C Power Adapter",
+        "product_image": "https://i.ibb.co.com/XLKKtKX/Apple-20-W-USB-C-Power-Adapter.webp",
+        "category": "chargers",
+        "price": 19,
+        "description": "Fast charging for iPhone and iPad models.",
+        "specification": ["20W", "USB-C", "Fast charging"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "CH003",
+        "product_title": "Samsung Super Fast Charger",
+        "product_image": "https://i.ibb.co.com/JB6kqnn/Samsung-Super-Fast-Charger.webp",
+        "category": "chargers",
+        "price": 25,
+        "description": "High-speed charger for Samsung devices.",
+        "specification": ["25W", "USB-C", "Fast charging"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "CH004",
+        "product_title": "Google 30W USB-C Charger",
+        "product_image": "https://i.ibb.co.com/0FWwypN/Google-30-W-USB-C-Charger.webp",
+        "category": "chargers",
+        "price": 29,
+        "description": "Fast charging for Pixel and other USB-C devices.",
+        "specification": ["30W", "USB-C", "Compact size"],
+        "availability": false,
+        "rating": 4.6
+      },
+      {
+        "product_id": "CH005",
+        "product_title": "Belkin Boost Charge Pro",
+        "product_image": "https://i.ibb.co.com/Rvps1NJ/Belkin-Boost-Charge-Pro.webp",
+        "category": "chargers",
+        "price": 39,
+        "description": "3-in-1 charger for Apple devices.",
+        "specification": ["MagSafe", "USB-C", "Wireless charging"],
+        "availability": true,
+        "rating": 4.8
+      },
+  
+      {
+        "product_id": "PB001",
+        "product_title": "Anker PowerCore 20100",
+        "product_image": "https://i.ibb.co.com/T4rKCt1/Anker-Power-Core-20100.jpg",
+        "category": "power banks",
+        "price": 50,
+        "description": "High-capacity power bank with fast charging.",
+        "specification": ["20100mAh", "USB-C", "18W Power Delivery"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "PB002",
+        "product_title": "Xiaomi Mi Power Bank 3",
+        "product_image": "https://i.ibb.co.com/f15pLQf/Xiaomi-Mi-Power-Bank-3.jpg",
+        "category": "power banks",
+        "price": 30,
+        "description": "Affordable power bank with multiple USB ports.",
+        "specification": ["10000mAh", "Dual USB", "18W Fast Charging"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "PB003",
+        "product_title": "RAVPower Portable Charger",
+        "product_image": "https://i.ibb.co.com/phwNL4g/AVPower-Portable-Charger.webp",
+        "category": "power banks",
+        "price": 60,
+        "description": "Portable power bank with fast recharging.",
+        "specification": ["20000mAh", "USB-C", "Quick Charge 3.0"],
+        "availability": false,
+        "rating": 4.8
+      },
+      {
+        "product_id": "PB004",
+        "product_title": "Mophie PowerStation Plus",
+        "product_image": "https://i.ibb.co.com/QN7Bb1S/Mophie-Power-Station-Plus.jpg",
+        "category": "power banks",
+        "price": 40,
+        "description": "Sleek and powerful charger for multiple devices.",
+        "specification": ["8000mAh", "Lightning & USB-C", "Compact design"],
+        "availability": true,
+        "rating": 4.5
+      },
+      {
+        "product_id": "PB005",
+        "product_title": "Goal Zero Venture 30",
+        "product_image": "https://i.ibb.co.com/NnwDTMy/Goal-Zero-Venture-30.webp",
+        "category": "power banks",
+        "price": 80,
+        "description": "Rugged and waterproof power bank for outdoor use.",
+        "specification": ["7800mAh", "Waterproof", "USB-C & USB-A"],
+        "availability": true,
+        "rating": 4.6
+      }
+    ]
+  

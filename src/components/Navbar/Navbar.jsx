@@ -1,6 +1,9 @@
+import { NavLink } from "react-router-dom";
+import { IoCartOutline } from "react-icons/io5";
+import { CiHeart } from "react-icons/ci";
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-[rgb(149,56,226)] text-[#FFFFFF] rounded-t-3xl pt-8 lg:max-w-[90%] mx-auto px-20">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -24,51 +27,32 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a>Item 1</a>
-            </li>
-            <li>
-              <a>Parent</a>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
+              <NavLink>Home</NavLink>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">Gadget Heaven</a>
+        <a className=" text-xl font-bold">Gadget Heaven</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>Item 1</a>
+            <NavLink>Home</NavLink>
           </li>
           <li>
-            <details>
-              <summary>Parent</summary>
-              <ul className="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </details>
+            <NavLink>Statistics</NavLink>
           </li>
           <li>
-            <a>Item 3</a>
+            <NavLink>Dashboard</NavLink>
           </li>
         </ul>
       </div>
-      <div className="navbar-end">
-        <a className="btn">Button</a>
+      <div className="navbar-end gap-4  text-[#3A3A3A]">
+        <div className="bg-[#ffffff] p-3 rounded-full border-none text-xl font-bold">
+          <IoCartOutline />
+        </div>
+        <div className="bg-[#ffffff] p-3 rounded-full border-none text-xl font-bold">
+          <CiHeart />
+        </div>
       </div>
     </div>
   );
