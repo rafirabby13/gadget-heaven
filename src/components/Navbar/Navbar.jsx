@@ -1,7 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
+import { useContext } from "react";
+import cartContext from '../ProductDetail/ProductDetail.jsx'
+import { CartContext } from "../Root/Root.jsx";
 const Navbar = () => {
+  const {cart} = useContext(CartContext)
+  console.log(cart);
   return (
     <div className="navbar bg-[rgb(149,56,226)] text-[#FFFFFF] rounded-t-3xl pt-8 lg:max-w-[90%] mx-auto px-20">
       <div className="navbar-start">
@@ -47,8 +52,9 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-4  text-[#3A3A3A]">
-        <div className="bg-[#ffffff] p-3 rounded-full border-none text-xl font-bold">
+        <div className="bg-[#ffffff] p-3 rounded-full border-none text-xl font-bold relative">
           <IoCartOutline />
+          <div className="absolute -top-3 left-7 bg-red-600 text-white px-1 rounded-lg ">{cart.length}</div>
         </div>
         <div className="bg-[#ffffff] p-3 rounded-full border-none text-xl font-bold">
           <CiHeart />
