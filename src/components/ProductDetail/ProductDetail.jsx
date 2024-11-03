@@ -7,10 +7,12 @@ import { CartContext } from "../Root/Root.jsx";
 
 const ProductDetail = () => {
   const { productId } = useParams();
-//   console.log(productId);
-const {handleAddToCart} = useContext(CartContext)
+  //   console.log(productId);
+  const { handleAddToCart } = useContext(CartContext);
   const data = useLoaderData();
+
   const foundProduct = data?.find((product) => product.product_id == productId);
+
   const {
     product_title,
     product_image,
@@ -21,8 +23,6 @@ const {handleAddToCart} = useContext(CartContext)
     availability,
     rating,
   } = foundProduct;
-
-  
 
   return (
     <div>
@@ -91,14 +91,17 @@ const {handleAddToCart} = useContext(CartContext)
               </h1>
             </div>
             <div className="flex items-center gap-5">
-              <button onClick={()=>handleAddToCart(foundProduct)} className="bg-[#9538E2] text-white font-bold text-lg flex items-center gap-3 py-2 px-6 rounded-3xl">
+              <button
+                onClick={() => handleAddToCart(foundProduct)}
+                className="bg-[#9538E2] text-white font-bold text-lg flex items-center gap-3 py-2 px-6 rounded-3xl"
+              >
                 Add To Cart
                 <div className="font-bold text-xl">
                   <IoCartOutline />
                 </div>
               </button>
               <div className="bg-slate-100 px-3 py-3 rounded-3xl text-2xl font-bold">
-              <FaRegHeart />
+                <FaRegHeart />
               </div>
             </div>
           </div>

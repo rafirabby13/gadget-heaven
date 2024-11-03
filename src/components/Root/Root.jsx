@@ -8,10 +8,16 @@ const Root = () => {
     const [cart, setCart] = useState([])
 
     const handleAddToCart=(product)=>{
-        setCart([...cart, product])
+        const checkingProductIsOrNot = cart.find(cart=> cart.product_id == product.product_id)
+        if (!checkingProductIsOrNot) {
+            setCart([...cart, product])
+        }
+        else{
+            alert('product exixts..')
+        }
     
       }
-    console.log(cart);
+    // console.log(cart);
 
     return (
         <CartContext.Provider value={{cart, handleAddToCart}}>

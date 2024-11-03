@@ -9,6 +9,7 @@ import Banner from './components/Banner/Banner.jsx'
 import SelectedCategory from './components/SelectedCatgeory/SelectedCategory.jsx'
 import Products from './components/Products/Products.jsx'
 import ProductDetail from './components/ProductDetail/ProductDetail.jsx'
+import CartDetail from './components/CartDetail/CartDetail.jsx'
 
 
 const router = createBrowserRouter([
@@ -33,7 +34,11 @@ const router = createBrowserRouter([
       {
         path: '/product/:productId',
         element: <ProductDetail/>,
-        loader: ()=> fetch("./gadgets.json")
+        loader: async ()=> await fetch("./gadgets.json")
+      },
+      {
+        path: '/cartDetail',
+        element: <CartDetail/>
       }
     ]
   },
