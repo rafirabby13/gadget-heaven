@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { Link, Outlet } from "react-router-dom";
 import CartDetail from "../CartDetail/CartDetail.jsx";
 import SortSection from "../SortSection/SortSection.jsx";

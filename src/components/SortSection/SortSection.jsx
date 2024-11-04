@@ -1,36 +1,15 @@
+/* eslint-disable no-unused-vars */
 import { useContext, useEffect, useRef, useState } from "react";
 import { BsSortDown } from "react-icons/bs";
-import { CartContext } from "../Root/Root.jsx";
+import { CartContext, TotalContext } from "../Root/Root.jsx";
 
 const SortSection = () => {
-  const { cart, handleSortByPrice, setWishList, setCart } =
+    const { cart, handleSortByPrice, setWishList, setCart } =
     useContext(CartContext);
+    
+   const { total, setTotal} = useContext(TotalContext)
 
-  const [total, setTotal] = useState(true);
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    if (loading) {
-      const totalValue = cart.reduce(
-        (accumulator, currentValue) => accumulator + currentValue.price,
-        0
-      );
-      setTotal(totalValue);
-    }
-    setLoading(false);
-  }, [loading]);
-
-  //    for (const element of cart) {
-  //     console.log(element.price);
-  //     const totalprice = element.price + total
-  //     console.log(totalprice);
-  //     setSum( totalprice)
-  // }
-
-  // for (const element of totalprie) {
-  //     setTotal(element+total)
-
-  // };
 
   const handlePurchase = () => {
     document.getElementById("my_modal_5").showModal();

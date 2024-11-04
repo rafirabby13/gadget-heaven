@@ -3,11 +3,14 @@ import Footer from "../Footer/Footer.jsx";
 import Navbar from "../Navbar/Navbar.jsx";
 import { createContext, useEffect, useState } from "react";
 export const CartContext = createContext();
+export const TotalContext = createContext();
 
 const Root = () => {
   const [cart, setCart] = useState([]);
   const [wishList, setWishList] = useState([]);
-  let [total, setTotal] = useState(0);
+  
+  const [total, setTotal] = useState(0);
+//   const [loading, setLoading] = useState(true);
 
   const handleAddToCart = (product) => {
     const checkingProductIsOrNot = cart.find(
@@ -43,25 +46,35 @@ const Root = () => {
   }
   
 
-//   console.log(cart);
-  // console.log(cart);
-//   const handleTotalPrice = () => {
-//     for (const element of cart) {
-//       console.log(element);
-//       const grandTotal = element.price + total;
-//       setTotal(grandTotal);
-//     }
-//     // console.log(grandTotal);
-//   };
+  
+  useEffect(() => {
+    const cartTotalFunc=()=>{
+        
+            console.log(cart);
+          const totalValue = [...cart].reduce(
+            (accumulator, currentValue) => accumulator + currentValue.price,
+            0
+          );
+          console.log(totalValue);
+          setTotal(totalValue);
+        
+    }
+    
+    cartTotalFunc()
+  }, [ cart]);
+
+
 
   return (
     <CartContext.Provider
-      value={{ cart, wishList, handleAddToCart, handleAddToWishList, total, handleSortByPrice,setCart,setWishList }}
+      value={{ cart, wishList, handleAddToCart, handleAddToWishList, handleSortByPrice,setCart,setWishList }}
     >
+      <TotalContext.Provider value={{total,setTotal}}>
       <Navbar />
       <Outlet />
 
       <Footer />
+      </TotalContext.Provider>
     </CartContext.Provider>
   );
 };
