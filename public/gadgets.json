@@ -1,5 +1,60 @@
 [
   {
+    "product_id": "C006",
+    "product_title": "Acer Aspire 5",
+    "product_image": "https://i.ibb.co.com/8Nmcjjn/acer-aspire-5-NX-KHEER-001-laptop-gray-1.jpg",
+    "category": "computers",
+    "price": 650,
+    "description": "Affordable laptop with solid performance for everyday tasks.",
+    "specification": ["Intel Core i5", "8GB RAM", "256GB SSD", "15.6-inch display"],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "CH006",
+    "product_title": "Sony USB-C Wall Charger",
+    "product_image": "https://i.ibb.co.com/TcZcmG3/Sony-USB-C-Wall-Charger.webp",
+    "category": "chargers",
+    "price": 35,
+    "description": "Compact and efficient USB-C charger for fast charging.",
+    "specification": ["30W", "USB-C Power Delivery", "Compact design"],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "SW006",
+    "product_title": "Huawei Watch GT 3",
+    "product_image": "https://i.ibb.co.com/jMNNp9n/watch-gt3-46-active-edition.png",
+    "category": "smart watches",
+    "price": 210,
+    "description": "Elegant smartwatch with long battery life and fitness tracking.",
+    "specification": ["AMOLED display", "Heart Rate Monitoring", "GPS"],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "PB006",
+    "product_title": "EcoFlow River Portable Power Station",
+    "product_image": "https://i.ibb.co.com/WzMRmw0/Eco-Flow-River.jpg",
+    "category": "power banks",
+    "price": 299,
+    "description": "Portable power station ideal for camping and emergencies.",
+    "specification": ["288Wh capacity", "AC outlets", "USB-C fast charge"],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P006",
+    "product_title": "Sony Xperia 5 III",
+    "product_image": "https://i.ibb.co.com/cwM9q7t/Sony-Xperia-5-III.png",
+    "category": "phones",
+    "price": 999,
+    "description": "Compact smartphone with high-end camera and display.",
+    "specification": ["6.1-inch OLED display", "128GB storage", "5G"],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
     "product_id": "C001",
     "product_title": "Dell XPS 13",
     "product_image": "https://i.ibb.co.com/Z1Dhv8m/Dell-XPS-13.webp",
