@@ -1,7 +1,7 @@
 
 const Statistics = () => {
     return (
-        <div className="min-h-screen">
+        <div className="min-h-screen px-32">
             Statistics
         </div>
     );

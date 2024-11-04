@@ -18,6 +18,7 @@ const Root = () => {
     );
     if (!checkingProductIsOrNot) {
       setCart([...cart, product]);
+      
     } else {
       alert("product exixts..");
     }
@@ -31,6 +32,13 @@ const Root = () => {
     } else {
       alert("product exixts.. in wishlist");
     }
+  };
+  const handleRemoveItemFromWishList = (produc) => {
+    // console.log(product);
+    const reminingData = [...wishList].filter(
+      (cartData) => cartData.product_id != produc.product_id
+    );
+    setWishList(reminingData);
   };
 
   const handleSortByPrice = () => {
@@ -65,6 +73,7 @@ const Root = () => {
         handleSortByPrice,
         setCart,
         setWishList,
+        handleRemoveItemFromWishList
       }}
     >
       <TotalContext.Provider value={{ total, setTotal }}>

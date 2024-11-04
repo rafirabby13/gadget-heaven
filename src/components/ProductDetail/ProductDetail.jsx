@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { createContext, useContext, useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import { IoIosHeartEmpty } from "react-icons/io";
@@ -31,14 +32,27 @@ const ProductDetail = () => {
  
 
   return (
-    <div className="min-h-screen py-12">
-      <div className="border-2 bg-[#ffffff47] rounded-2xl w-3/4 mx-auto ">
+    <div className="min-h-screen ">
+      
+      <div className="bg-[#9538E2] pt-12 pb-72 lg:max-w-[90%] mx-auto">
+        <div className="text-center text-white space-y-7 w-2/3 mx-auto">
+          <h1 className="text-6xl font-bold ">Product Details</h1>
+          <p className="text-lg font-normal ">
+          Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
+          </p>
+          
+        
+      </div>
+      
+      
+    </div>
+      <div className="border-2 bg-[#ffffff] rounded-2xl w-3/4 mx-auto p-6 relative -top-60">
         <div
           className="grid grid-cols-2 items-center gap-8
         "
         >
           <img
-            className="rounded-xl lg:h-[500px] w-full "
+            className="rounded-xl lg:h-[500px] w-full bg-slate-100"
             src={product_image}
             alt=""
           />

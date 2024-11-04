@@ -1,15 +1,17 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { RxCross2 } from "react-icons/rx";
-import SortSection from "../SortSection/SortSection.jsx";
-import { useContext } from "react";
-import { CartContext } from "../Root/Root.jsx";
+import React, { useContext } from 'react';
+import { CartContext } from '../Root/Root.jsx';
+import { RxCross2 } from 'react-icons/rx';
 
-const AddedDetail = ({ product }) => {
-  const { cart, setCart } = useContext(CartContext);
+const AddedToCartProducts = ({product}) => {
+
+
+
+    const { cart, setCart } = useContext(CartContext);
   const { product_title, product_image, description, price } = product;
 
-  const handleRemoveItem = (produc) => {
+  const handleRemoveItemFromCart = (produc) => {
     // console.log(product);
     const reminingData = [...cart].filter(
       (cartData) => cartData.product_id != produc.product_id
@@ -17,8 +19,11 @@ const AddedDetail = ({ product }) => {
     setCart(reminingData);
   };
 
-  return (
-    <div className="">
+
+
+
+    return (
+        <div className="">
       <div className="border-2 border-[#13131338] rounded-xl p-6 w-3/5 mx-auto bg-slate-100 ">
         <div className="flex justify-between gap-8 items-start">
           <div className="flex items-center gap-8 justify-start ">
@@ -34,7 +39,7 @@ const AddedDetail = ({ product }) => {
             </div>
           </div>
           <div
-            onClick={() => handleRemoveItem(product)}
+            onClick={() => handleRemoveItemFromCart(product)}
             className="border-2 border-red-600  p-3 rounded-full text-red-600"
           >
             <RxCross2 />
@@ -42,7 +47,7 @@ const AddedDetail = ({ product }) => {
         </div>
       </div>
     </div>
-  );
+    );
 };
 
-export default AddedDetail;
+export default AddedToCartProducts;

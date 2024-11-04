@@ -9,10 +9,11 @@ const Navbar = () => {
 
   const location =  useLocation()
 let currentLoc=location.pathname;
-
+const id = currentLoc.split('/')[2]
+// console.log(currentLoc.split('/')[2]);
 
   return (
-    <div className={`navbar  ${currentLoc !='/statistics' && currentLoc !='/dashboard'&& currentLoc !='/dashboard/wishDetail' ? 'bg-[rgb(149,56,226)]  text-[#FFFFFF]': 'bg-white'}  rounded-t-3xl pt-8 lg:max-w-[90%] mx-auto px-20`}>
+    <div className={`navbar  ${currentLoc !='/statistics' && currentLoc !='/dashboard'&& currentLoc !='/dashboard/wishDetail' && currentLoc !=`/product/${id}` ? 'bg-[rgb(149,56,226)]  text-[#FFFFFF]': 'bg-white'}  rounded-t-3xl pt-8 lg:max-w-[90%] mx-auto px-20`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
