@@ -2,6 +2,7 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { BsSortDown } from "react-icons/bs";
 import { CartContext, TotalContext } from "../Root/Root.jsx";
+import { MdOutlineVerified } from "react-icons/md";
 
 const SortSection = () => {
     const { cart, handleSortByPrice, setWishList, setCart } =
@@ -13,6 +14,13 @@ const SortSection = () => {
 
   const handlePurchase = () => {
     document.getElementById("my_modal_5").showModal();
+    // setCart([]);
+
+    // setWishList([]);
+    // setTotal(0);
+  };
+  const handleClose = () => {
+    
     setCart([]);
 
     setWishList([]);
@@ -37,15 +45,19 @@ const SortSection = () => {
       {/* Open the modal using document.getElementById('ID').showModal() method */}
 
       <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
-        <div className="modal-box">
-          <h3 className="font-bold text-lg">Hello!</h3>
-          <p className="py-4">
-            Press ESC key or click the button below to close
-          </p>
-          <div className="modal-action">
-            <form method="dialog">
+        
+        <div className="modal-box text-center space-y-4  py-12">
+        <div className="text-center text-7xl flex justify-center ">
+        <MdOutlineVerified className="text-[#3EB655]"></MdOutlineVerified>
+        </div>
+          <h3 className="font-bold text-2xl text-[#09080F]">Payment Successfully</h3>
+          <p className="font-medium text-lg text-[#09080fa5]">Thanks for purchasing</p>
+          <p className="font-medium text-xl text-[#09080fd0]">Total : {total}k</p>
+          
+          <div className="modal-actio w-full">
+            <form method="dialog w-full">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn">Close</button>
+              <button onClick={handleClose} className="btn w-full text-xl font-bold">Close</button>
             </form>
           </div>
         </div>

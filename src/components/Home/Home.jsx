@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import Banner from "../Banner/Banner.jsx";
 import ExploreSection from "../ExploreSection/ExploreSection.jsx";
@@ -11,11 +12,11 @@ const Home = () => {
     setCategory(clickedCategory);
   };
   return (
-    <div>
-      {/* <Banner/> */}
+    <div className="min-h-screen">
+      <Banner />
       <div className="border-2 grid grid-cols-6 px-32 gap-5">
         <Sidebar handleCategory={handleCategory} />
-        <Outlet/>
+        <Outlet />
       </div>
       {/* <ExploreSection/> */}
     </div>
