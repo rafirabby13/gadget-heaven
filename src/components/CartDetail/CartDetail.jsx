@@ -15,7 +15,7 @@ const CartDetail = () => {
      
          
             <div className="grid gap-6">
-            {cart.map((cart, index) => (
+            {cart?.map((cart, index) => (
               <AddedDetail key={index} product={cart}></AddedDetail>
             ))}
           </div>

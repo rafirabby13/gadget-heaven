@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import { useContext } from "react";
@@ -6,8 +6,13 @@ import { CartContext } from "../Root/Root.jsx";
 const Navbar = () => {
   const { cart, wishList } = useContext(CartContext);
   // console.log(cart);
+
+  const location =  useLocation()
+let currentLoc=location.pathname;
+
+
   return (
-    <div className="navbar bg-[rgb(149,56,226)] text-[#FFFFFF] rounded-t-3xl pt-8 lg:max-w-[90%] mx-auto px-20">
+    <div className={`navbar  ${currentLoc !='/statistics' && currentLoc !='/dashboard' ? 'bg-[rgb(149,56,226)]  text-[#FFFFFF]': 'bg-white'}  rounded-t-3xl pt-8 lg:max-w-[90%] mx-auto px-20`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -40,19 +45,19 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <NavLink>Home</NavLink>
+            <NavLink to='/' className={({isActive})=> isActive? `active underline`:``}>Home</NavLink>
           </li>
           <li>
-            <NavLink>Statistics</NavLink>
+            <NavLink to='/statistics'  className={({isActive})=> isActive? `active underline`:``}>Statistics</NavLink>
           </li>
           <li>
-            <NavLink to='/dashboard'>Dashboard</NavLink>
+            <NavLink to='/dashboard'  className={({isActive})=> isActive? `active underline`:``}>Dashboard</NavLink>
           </li>
         </ul>
       </div>
       <div className="navbar-end gap-4  text-[#3A3A3A]">
         <Link to={`/dashboard`}>
-          <div className="bg-[#ffffff] p-3 rounded-full border-none text-xl font-bold relative">
+          <div className="bg-[#dbf7df] p-3 rounded-full border-none text-xl font-bold relative">
             <IoCartOutline />
             <div className="absolute -top-3 left-7 bg-red-600 text-white px-1 rounded-lg ">
               {cart.length}
@@ -60,7 +65,7 @@ const Navbar = () => {
           </div>
         </Link>
         <Link to="/dashboard/wishDetail">
-          <div className="bg-[#ffffff] p-3 rounded-full border-none text-xl font-bold relative">
+          <div className="bg-[#dbf7df] p-3 rounded-full border-none text-xl font-bold relative">
             <CiHeart />
             <div className="absolute -top-3 left-7 bg-red-600 text-white px-1 rounded-lg ">
               {wishList.length}

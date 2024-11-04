@@ -31,7 +31,7 @@ const ProductDetail = () => {
  
 
   return (
-    <div>
+    <div className="min-h-screen py-12">
       <div className="border-2 bg-[#ffffff47] rounded-2xl w-3/4 mx-auto ">
         <div
           className="grid grid-cols-2 items-center gap-8

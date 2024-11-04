@@ -8,9 +8,9 @@ export const TotalContext = createContext();
 const Root = () => {
   const [cart, setCart] = useState([]);
   const [wishList, setWishList] = useState([]);
-  
+
   const [total, setTotal] = useState(0);
-//   const [loading, setLoading] = useState(true);
+  //   const [loading, setLoading] = useState(true);
 
   const handleAddToCart = (product) => {
     const checkingProductIsOrNot = cart.find(
@@ -18,11 +18,9 @@ const Root = () => {
     );
     if (!checkingProductIsOrNot) {
       setCart([...cart, product]);
-      
     } else {
       alert("product exixts..");
     }
-
   };
   const handleAddToWishList = (product) => {
     const checkingProductIsOrNot = wishList.find(
@@ -35,45 +33,45 @@ const Root = () => {
     }
   };
 
-  const handleSortByPrice=()=>{
-   
-    const sortedDat = [...cart].sort(function(a,b){
-        return b.price - a.price;
-    })
-    
+  const handleSortByPrice = () => {
+    const sortedDat = [...cart].sort(function (a, b) {
+      return b.price - a.price;
+    });
 
-    setCart(sortedDat)
-  }
-  
+    setCart(sortedDat);
+  };
 
-  
   useEffect(() => {
-    const cartTotalFunc=()=>{
-        
-            console.log(cart);
-          const totalValue = [...cart].reduce(
-            (accumulator, currentValue) => accumulator + currentValue.price,
-            0
-          );
-          console.log(totalValue);
-          setTotal(totalValue);
-        
-    }
-    
-    cartTotalFunc()
-  }, [ cart]);
+    const cartTotalFunc = () => {
+      // console.log(cart);
+      const totalValue = [...cart].reduce(
+        (accumulator, currentValue) => accumulator + currentValue.price,
+        0
+      );
+      //   console.log(totalValue);
+      setTotal(totalValue);
+    };
 
-
+    cartTotalFunc();
+  }, [cart]);
 
   return (
     <CartContext.Provider
-      value={{ cart, wishList, handleAddToCart, handleAddToWishList, handleSortByPrice,setCart,setWishList }}
+      value={{
+        cart,
+        wishList,
+        handleAddToCart,
+        handleAddToWishList,
+        handleSortByPrice,
+        setCart,
+        setWishList,
+      }}
     >
-      <TotalContext.Provider value={{total,setTotal}}>
-      <Navbar />
-      <Outlet />
+      <TotalContext.Provider value={{ total, setTotal }}>
+        <Navbar />
+        <Outlet />
 
-      <Footer />
+        <Footer />
       </TotalContext.Provider>
     </CartContext.Provider>
   );

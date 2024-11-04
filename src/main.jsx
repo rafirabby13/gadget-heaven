@@ -13,6 +13,7 @@ import ProductDetail from './components/ProductDetail/ProductDetail.jsx'
 import CartDetail from './components/CartDetail/CartDetail.jsx'
 import WishListDetails from './components/WishListDetails/WishListDetails.jsx'
 import ProductAddedDetail from './components/ProductAddedDetail/ProductAddedDetail.jsx'
+import Statistics from './components/Statristics/Statistics.jsx'
 
 
 const router = createBrowserRouter([
@@ -53,11 +54,11 @@ const router = createBrowserRouter([
           }
 
         ]
-      }
-      // {
-      //   path: '/cartDetail',
-      //   element: <CartDetail/>
-      // },
+      },
+      {
+        path: '/statistics',
+        element: <Statistics/>
+      },
       // {
       //   path: '/wishDetail',
       //   element: <WishListDetails/>

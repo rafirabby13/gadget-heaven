@@ -24,9 +24,7 @@ const SelectedCategory = () => {
   }, [category]);
   return (
     <div className="col-span-5">
-      <h1 className="text-4xl font-bold text-[#0B0B0B] text-center py-12">
-        Explore Cutting-Edge Gadgets
-      </h1>
+      
 
       {products.length > 0 ? (
         <div className="grid grid-cols-3 gap-6">

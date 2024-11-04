@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import SidebarContent from "../SidebarContent/SidebarContent.jsx";
 
@@ -14,7 +15,7 @@ const Sidebar = ({handleCategory}) => {
         })
     },[])
     return (
-        <div className="col-span-1 pt-32">
+        <div className="col-span-1 ">
             <div className="grid gap-5">
             {
                 categories.map((category,  index)=><SidebarContent key={index} category={category}

@@ -15,7 +15,10 @@ const Products = ({category}) => {
     )
   }, []);
   return (
+   
+    
     <div className="col-span-5 border-2">
+      
       <div className="grid grid-cols-3 gap-6">
       {
         products.map(product=> <Product
@@ -25,6 +28,7 @@ const Products = ({category}) => {
       }
       </div>
     </div>
+   
   );
 };
 

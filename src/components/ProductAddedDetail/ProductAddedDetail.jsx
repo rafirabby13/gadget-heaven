@@ -5,7 +5,7 @@ import SortSection from "../SortSection/SortSection.jsx";
 
 const ProductAddedDetail = () => {
   return (
-    <div className="">
+    <div className="min-h-screen">
       <div className="bg-[#9538E2] pt-12 pb-12 lg:pb-12  lg:relative  lg:max-w-[90%] mx-auto">
         <div className="text-center text-white space-y-7 w-2/3 mx-auto">
           <h1 className="text-6xl font-bold ">Dashboard</h1>
