@@ -27,7 +27,7 @@ const ProductAddedDetail = () => {
           </div>
         </div>
       </div>
-      <SortSection/>
+      
       <Outlet />
     </div>
   );

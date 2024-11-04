@@ -1,8 +1,11 @@
 import { RxCross2 } from "react-icons/rx";
+import SortSection from "../SortSection/SortSection.jsx";
 
 const AddedDetail = ({product}) => {
     const {product_title,product_image,description,price,} = product
     return (
+        <div>
+           
         <div className="border-2 border-[#13131338] rounded-xl p-6 w-3/5 mx-auto bg-slate-100">
            <div className="flex justify-between gap-8 items-start">
            <div className="flex items-center gap-8 justify-start ">
@@ -17,6 +20,7 @@ const AddedDetail = ({product}) => {
             <RxCross2 />
             </div>
            </div>
+        </div>
         </div>
     );
 };

@@ -9,9 +9,9 @@ const WishListDetails = () => {
     <div>
       <h2>wish list</h2>
       <div className="grid gap-6">
-        {wishList?.map((wishList) => (
+        {wishList?.map((wishList, index) => (
           <AddedDetail
-            key={wishList.product_id}
+            key={index}
             product={wishList}
           ></AddedDetail>
         ))}

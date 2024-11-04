@@ -2,7 +2,6 @@ import { Link, NavLink } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import { useContext } from "react";
-import cartContext from "../ProductDetail/ProductDetail.jsx";
 import { CartContext } from "../Root/Root.jsx";
 const Navbar = () => {
   const { cart, wishList } = useContext(CartContext);

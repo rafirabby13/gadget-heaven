@@ -36,7 +36,7 @@ const router = createBrowserRouter([
       {
         path: '/product/:productId',
         element: <ProductDetail/>,
-        loader: async ()=> await fetch("./gadgets.json")
+        loader: async ()=> await fetch("../gadgets.json")
       },
       {
         path: '/dashboard',
