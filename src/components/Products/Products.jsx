@@ -17,7 +17,7 @@ const Products = ({category}) => {
   return (
    
     
-    <div className="col-span-5 border-2">
+    <div className="col-span-5  pb-20">
       
       <div className="grid grid-cols-3 gap-6">
       {

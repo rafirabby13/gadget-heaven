@@ -14,10 +14,12 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Banner />
-      <h1 className="text-[#OBOBOB] font-bold text-4xl text-center py-12">Explore Cutting-Edge Gadgets</h1>
-      <div className="border-2 grid grid-cols-6 px-32 gap-5">
+      <div className="-mt-40">
+      <h1 className="text-[#OBOBOB] font-bold text-4xl text-center pb-12">Explore Cutting-Edge Gadgets</h1>
+      <div className="border-2 grid grid-cols-6 px-32 gap-5 min-h-screen pb-20">
         <Sidebar handleCategory={handleCategory} />
         <Outlet />
+      </div>
       </div>
     </div>
   );

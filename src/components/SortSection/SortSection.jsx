@@ -1,4 +1,5 @@
 /* eslint-disable no-unused-vars */
+import grp from '../../assets/Group.png'
 import { useContext, useEffect, useRef, useState } from "react";
 import { BsSortDown } from "react-icons/bs";
 import { CartContext, TotalContext } from "../Root/Root.jsx";
@@ -51,7 +52,7 @@ const SortSection = () => {
         
         <div className="modal-box text-center space-y-4  py-12">
         <div className="text-center text-7xl flex justify-center ">
-        <MdOutlineVerified className="text-[#3EB655]"></MdOutlineVerified>
+        <img src={grp} alt="" />
         </div>
           <h3 className="font-bold text-2xl text-[#09080F]">Payment Successfully</h3>
           <p className="font-medium text-lg text-[#09080fa5]">Thanks for purchasing</p>

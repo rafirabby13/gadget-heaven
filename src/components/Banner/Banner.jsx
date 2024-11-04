@@ -1,7 +1,8 @@
+import banner from '../../assets/banner.jpg'
 const Banner = () => {
   return (
     <div>
-      <div className="bg-[#9538E2] pt-12 pb-12 lg:pb-12 rounded-b-3xl lg:relative  lg:max-w-[90%] mx-auto">
+      <div className="bg-[#9538E2] pt-12   rounded-b-3xl relative pb-72 lg:max-w-[90%] mx-auto">
         <div className="text-center text-white space-y-7 w-2/3 mx-auto">
           <h1 className="text-6xl font-bold ">
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories
@@ -16,7 +17,7 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      {/* <div className="border-2 bg-[#ffffff47] rounded-2xl w-3/4 mx-auto lg:absolute lg:right-0 lg:left-0 p-6 lg:-bottom-1/3">
+      <div className="border-2 p-6 bg-[#ffffff47] rounded-2xl w-3/4 mx-auto relative -top-60">
         <div className="">
           <img
             className="rounded-xl lg:h-[500px] w-full "
@@ -24,7 +25,7 @@ const Banner = () => {
             alt=""
           />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
