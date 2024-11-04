@@ -1,11 +1,11 @@
- [
-      "All Products",
-      "computers",
-      "phones",
-      "smart watches",
-      "chargers",
-      "power banks",
-      "tablets"
-    ]
+[
+  { "name": "All Products", "category": "" },
+  { "name": "Computers", "category": "computers" },
+  { "name": "Phones", "category": "phones" },
+  { "name": "Smart Watches", "category": "smart watches" },
+  { "name": "Chargers", "category": "chargers" },
+  { "name": "Power Banks", "category": "power banks" },
+  { "name": "Tablets", "category": "tablets" }
+]
   
   

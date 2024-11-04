@@ -3,13 +3,14 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { BsSortDown } from "react-icons/bs";
 import { CartContext, TotalContext } from "../Root/Root.jsx";
 import { MdOutlineVerified } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const SortSection = () => {
     const { cart, handleSortByPrice, setWishList, setCart } =
     useContext(CartContext);
     
    const { total, setTotal} = useContext(TotalContext)
-
+ const navigate = useNavigate()
 
 
   const handlePurchase = () => {
@@ -25,22 +26,24 @@ const SortSection = () => {
 
     setWishList([]);
     setTotal(0);
+    navigate('/')
   };
 
   return (
     <div className="flex items-center gap-5 justify-between px-20 py-10">
       <div>
-        <h1>Cart</h1>
+        <h1  className="text-[#0B0B0B] font-bold text-2xl">Cart</h1>
       </div>
       <div className="flex items-center gap-5">
-        <h1>Total Cost: {total}k</h1>
-        <div onClick={handleSortByPrice} className="flex items-center gap-5">
+        <h1 className="text-[#0B0B0B] font-bold text-2xl">Total Cost: {total}k</h1>
+        <div onClick={handleSortByPrice} className="flex items-center gap-5 btnGradient text-xl font-bold">
           <h1>Sort by Price</h1>
-          <div>
+          <div className=" text-2xl font-bold">
             <BsSortDown />
           </div>
         </div>
-        <button onClick={handlePurchase}>Purchase</button>
+        <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500
+        px-8 py-4 rounded-3xl text-white text-xl font-bold" onClick={handlePurchase}>Purchase</button>
       </div>
       {/* Open the modal using document.getElementById('ID').showModal() method */}
 

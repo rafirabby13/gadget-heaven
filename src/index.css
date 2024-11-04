@@ -12,3 +12,28 @@ body{
     background-color: transparent;
     font: bold;
 } */
+
+.btnGradient{
+    border: none;
+    padding: 12px 2rem;
+    border-radius: 30px;
+    background-color: #ffffff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8332C5;
+    cursor: pointer;
+    
+
+}
+.btnGradient::after{
+    content: '';
+    position: absolute;
+    /* top: 0.1px; */
+    height: 107%;
+    width: 103%;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, #8332C5, #e238c3);
+    z-index: -1;
+}

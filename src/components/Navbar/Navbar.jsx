@@ -12,7 +12,7 @@ let currentLoc=location.pathname;
 
 
   return (
-    <div className={`navbar  ${currentLoc !='/statistics' && currentLoc !='/dashboard' ? 'bg-[rgb(149,56,226)]  text-[#FFFFFF]': 'bg-white'}  rounded-t-3xl pt-8 lg:max-w-[90%] mx-auto px-20`}>
+    <div className={`navbar  ${currentLoc !='/statistics' && currentLoc !='/dashboard'&& currentLoc !='/dashboard/wishDetail' ? 'bg-[rgb(149,56,226)]  text-[#FFFFFF]': 'bg-white'}  rounded-t-3xl pt-8 lg:max-w-[90%] mx-auto px-20`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -45,13 +45,13 @@ let currentLoc=location.pathname;
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <NavLink to='/' className={({isActive})=> isActive? `active underline`:``}>Home</NavLink>
+            <NavLink to='/' className={({isActive})=> isActive? ` underline font-bold text-white`:``}>Home</NavLink>
           </li>
           <li>
-            <NavLink to='/statistics'  className={({isActive})=> isActive? `active underline`:``}>Statistics</NavLink>
+            <NavLink to='/statistics'  className={({isActive})=> isActive? ` underline font-bold bg-[rgb(149,56,226)] text-white`:``}>Statistics</NavLink>
           </li>
           <li>
-            <NavLink to='/dashboard'  className={({isActive})=> isActive? `active underline`:``}>Dashboard</NavLink>
+            <NavLink to='/dashboard'  className={({isActive})=> isActive? `font-bold underline bg-[rgb(149,56,226)] text-white`:``}>Dashboard</NavLink>
           </li>
         </ul>
       </div>

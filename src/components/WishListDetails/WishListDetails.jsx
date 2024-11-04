@@ -7,7 +7,7 @@ const WishListDetails = () => {
 //   console.log(wishList);
   return (
     <div>
-      <h2>wish list</h2>
+      <h2 className=" px-20 py-10 text-[#0B0B0B] font-bold text-2xl">wish list</h2>
       <div className="grid gap-6">
         {wishList?.map((wishList, index) => (
           <AddedDetail
