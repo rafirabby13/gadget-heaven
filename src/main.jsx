@@ -10,6 +10,8 @@ import SelectedCategory from './components/SelectedCatgeory/SelectedCategory.jsx
 import Products from './components/Products/Products.jsx'
 import ProductDetail from './components/ProductDetail/ProductDetail.jsx'
 import CartDetail from './components/CartDetail/CartDetail.jsx'
+import WishListDetails from './components/WishListDetails/WishListDetails.jsx'
+import ProductAddedDetail from './components/ProductAddedDetail/ProductAddedDetail.jsx'
 
 
 const router = createBrowserRouter([
@@ -37,9 +39,28 @@ const router = createBrowserRouter([
         loader: async ()=> await fetch("./gadgets.json")
       },
       {
-        path: '/cartDetail',
-        element: <CartDetail/>
+        path: '/dashboard',
+        element: <ProductAddedDetail/>,
+        children:[
+          {
+            path: '',
+            element: <CartDetail/>
+          },
+          {
+            path: 'wishDetail',
+            element: <WishListDetails/>
+          }
+
+        ]
       }
+      // {
+      //   path: '/cartDetail',
+      //   element: <CartDetail/>
+      // },
+      // {
+      //   path: '/wishDetail',
+      //   element: <WishListDetails/>
+      // }
     ]
   },
   

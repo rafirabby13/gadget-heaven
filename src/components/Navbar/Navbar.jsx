@@ -5,7 +5,7 @@ import { useContext } from "react";
 import cartContext from "../ProductDetail/ProductDetail.jsx";
 import { CartContext } from "../Root/Root.jsx";
 const Navbar = () => {
-  const { cart } = useContext(CartContext);
+  const { cart, wishList } = useContext(CartContext);
   // console.log(cart);
   return (
     <div className="navbar bg-[rgb(149,56,226)] text-[#FFFFFF] rounded-t-3xl pt-8 lg:max-w-[90%] mx-auto px-20">
@@ -47,13 +47,12 @@ const Navbar = () => {
             <NavLink>Statistics</NavLink>
           </li>
           <li>
-            <NavLink>Dashboard</NavLink>
+            <NavLink to='/dashboard'>Dashboard</NavLink>
           </li>
         </ul>
       </div>
       <div className="navbar-end gap-4  text-[#3A3A3A]">
-        
-        <Link to={`/cartDetail`}>
+        <Link to={`/dashboard`}>
           <div className="bg-[#ffffff] p-3 rounded-full border-none text-xl font-bold relative">
             <IoCartOutline />
             <div className="absolute -top-3 left-7 bg-red-600 text-white px-1 rounded-lg ">
@@ -61,9 +60,14 @@ const Navbar = () => {
             </div>
           </div>
         </Link>
-        <div className="bg-[#ffffff] p-3 rounded-full border-none text-xl font-bold">
-          <CiHeart />
-        </div>
+        <Link to="/dashboard/wishDetail">
+          <div className="bg-[#ffffff] p-3 rounded-full border-none text-xl font-bold relative">
+            <CiHeart />
+            <div className="absolute -top-3 left-7 bg-red-600 text-white px-1 rounded-lg ">
+              {wishList.length}
+            </div>
+          </div>
+        </Link>
       </div>
     </div>
   );

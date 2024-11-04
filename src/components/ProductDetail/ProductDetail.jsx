@@ -8,10 +8,14 @@ import { CartContext } from "../Root/Root.jsx";
 const ProductDetail = () => {
   const { productId } = useParams();
   //   console.log(productId);
-  const { handleAddToCart } = useContext(CartContext);
-  const data = useLoaderData();
+  const { handleAddToCart , handleAddToWishList} = useContext(CartContext);
 
-  const foundProduct = data?.find((product) => product.product_id == productId);
+  
+
+      const data = useLoaderData();
+      const foundProduct = data.find((product) => product.product_id === productId);
+  
+
 
   const {
     product_title,
@@ -23,6 +27,8 @@ const ProductDetail = () => {
     availability,
     rating,
   } = foundProduct;
+
+ 
 
   return (
     <div>
@@ -100,9 +106,11 @@ const ProductDetail = () => {
                   <IoCartOutline />
                 </div>
               </button>
-              <div className="bg-slate-100 px-3 py-3 rounded-3xl text-2xl font-bold">
+              
+              <div onClick={()=>handleAddToWishList(foundProduct)} className="bg-slate-100 px-3 py-3 rounded-3xl text-2xl font-bold">
                 <FaRegHeart />
               </div>
+             
             </div>
           </div>
         </div>
