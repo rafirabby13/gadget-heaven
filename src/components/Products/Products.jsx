@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import Product from "../Product/Product.jsx";
 
@@ -17,9 +19,10 @@ const Products = ({category}) => {
   return (
    
     
-    <div className="col-span-5  pb-20">
+    <div className="lg:col-span-5  pb-20">
       
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2
+         lg:gap-6">
       {
         products.map(product=> <Product
         key={product.product_id}

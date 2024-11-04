@@ -15,8 +15,8 @@ const Home = () => {
     <div className="min-h-screen">
       <Banner />
       <div className="-mt-40">
-      <h1 className="text-[#OBOBOB] font-bold text-4xl text-center pb-12">Explore Cutting-Edge Gadgets</h1>
-      <div className="border-2 grid grid-cols-6 px-32 gap-5 min-h-screen pb-20">
+      <h1 className="text-[#OBOBOB] font-bold text-xl lg:text-4xl text-center pb-12">Explore Cutting-Edge Gadgets</h1>
+      <div className="border-2 grid grid-cols-1 lg:grid-cols-6 lg:px-32 gap-5 min-h-screen pb-20">
         <Sidebar handleCategory={handleCategory} />
         <Outlet />
       </div>

@@ -22,7 +22,7 @@ const SidebarContent = ({ category, handleCategory }) => {
             actv ? "bg-[#9538E2] text-white exact" : "bg-[#47464d1e] "
           }`}
         >
-          <p className=" font-medium text-lg ">{category.name}</p>
+          <p className=" font-medium text-xs  lg:text-lg ">{category.name}</p>
         </div>
       </NavLink>
     </div>

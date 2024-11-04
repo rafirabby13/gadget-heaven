@@ -23,11 +23,12 @@ const SelectedCategory = () => {
       });
   }, [category]);
   return (
-    <div className="col-span-5">
+    <div className="lg:col-span-5">
       
 
       {products.length > 0 ? (
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-2
+         lg:gap-6">
           {products.map((product) => (
             <Product key={product.product_id} product={product}></Product>
           ))}

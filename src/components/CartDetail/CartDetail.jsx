@@ -16,7 +16,7 @@ const CartDetail = () => {
       <SortSection />
      
          
-            <div className="grid gap-6">
+            <div className="grid gap-2 lg:gap-6">
             {cart?.map((cart, index) => (
               <AddedToCartProducts key={index} product={cart}></AddedToCartProducts>
             ))}

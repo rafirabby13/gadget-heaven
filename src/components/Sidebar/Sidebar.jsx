@@ -15,8 +15,9 @@ const Sidebar = ({handleCategory}) => {
         })
     },[])
     return (
-        <div className="col-span-1 ">
-            <div className="grid gap-5">
+        <div className="lg:col-span-1 ">
+            <div className="grid grid-cols-2 lg:grid-cols-1 lg:gap-5 gap-2
+            ">
             {
                 categories.map((category,  index)=><SidebarContent key={index} category={category}
                 handleCategory={handleCategory}></SidebarContent>)

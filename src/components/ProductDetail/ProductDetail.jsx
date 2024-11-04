@@ -35,9 +35,9 @@ const ProductDetail = () => {
     <div className="min-h-screen ">
       
       <div className="bg-[#9538E2] pt-12 pb-72 lg:max-w-[90%] mx-auto">
-        <div className="text-center text-white space-y-7 w-2/3 mx-auto">
-          <h1 className="text-6xl font-bold ">Product Details</h1>
-          <p className="text-lg font-normal ">
+        <div className="text-center text-white space-y-3 lg:space-y-7 lg:w-2/3 mx-auto">
+          <h1 className="text-xl lg:text-6xl font-bold ">Product Details</h1>
+          <p className="text-sm lg:text-lg font-normal ">
           Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!
           </p>
           
@@ -46,9 +46,9 @@ const ProductDetail = () => {
       
       
     </div>
-      <div className="border-2 bg-[#ffffff] rounded-2xl w-3/4 mx-auto p-6 relative -top-60">
+      <div className="border-2 bg-[#ffffff] rounded-2xl lg:w-3/4 mx-auto lg:p-6 relative -top-60">
         <div
-          className="grid grid-cols-2 items-center gap-8
+          className="grid lg:grid-cols-2 items-center gap-8
         "
         >
           <img
@@ -56,27 +56,27 @@ const ProductDetail = () => {
             src={product_image}
             alt=""
           />
-          <div className="space-y-3">
-            <h1 className="text-[#09080F] text-3xl font-semibold">
+          <div className="space-y-1 lg:space-y-3 px-4 lg:px-0">
+            <h1 className="text-[#09080F] text-lg lg:text-3xl font-semibold">
               {product_title}
             </h1>
-            <h1 className="text-[#09080F] text-lg font-semibold">
+            <h1 className="text-[#09080F] text-sm lg:text-lg font-semibold">
               Price: {price}k
             </h1>
-            <div className="text-[#309C08] border-2 border-[#309C08] rounded-3xl py-2 px-3 font-bold bg-[#2f9c0830] w-fit">
+            <div className="text-[#309C08] border-2 border-[#309C08] rounded-3xl py-1 lg:py-2 px-3 font-bold bg-[#2f9c0830] w-fit text-xs lg:text-lg">
               In Stock
             </div>
-            <h1 className="text-[#09080f7b] text-lg font-normal">
+            <h1 className="text-[#09080f7b] text-xs lg:text-lg font-normal">
               {description}
             </h1>
-            <ol className="space-y-2">
+            <ol className=" lg:space-y-2 text-xs lg:text-lg">
               {specification.map((specs, index) => (
                 <li key={index}>
                   {index + 1}. {specs}
                 </li>
               ))}
             </ol>
-            <h1 className="text-[#09080fe5] text-lg font-bold">Rating</h1>
+            <h1 className="text-[#09080fe5] text-xs lg:text-lg font-bold">Rating</h1>
             <div className="flex items-center gap-3">
               <div className="rating">
                 <input
@@ -113,10 +113,10 @@ const ProductDetail = () => {
             <div className="flex items-center gap-5">
               <button
                 onClick={() => handleAddToCart(foundProduct)}
-                className="bg-[#9538E2] text-white font-bold text-lg flex items-center gap-3 py-2 px-6 rounded-3xl"
+                className="bg-[#9538E2] text-white font-bold text-sm lg:text-lg flex items-center gap-3 py-2 px-6 rounded-3xl"
               >
                 Add To Cart
-                <div className="font-bold text-xl">
+                <div className="font-bold text-sm lg:text-xl">
                   <IoCartOutline />
                 </div>
               </button>

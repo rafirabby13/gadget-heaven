@@ -16,17 +16,17 @@ const AddedToWishListProducts = ({product}) => {
 
     return (
         <div className="">
-      <div className="border-2 border-[#13131338] rounded-xl p-6 w-3/5 mx-auto bg-slate-100 ">
-        <div className="flex justify-between gap-8 items-start">
-          <div className="flex items-center gap-8 justify-start ">
+      <div className="border-2 border-[#13131338] rounded-xl p-3 lg:p-6 lg:w-3/5 mx-auto bg-slate-100  ">
+        <div className="flex flex-col-reverse lg:flex-row justify-between gap-2 lg:gap-8 items-start">
+          <div className="flex flex-col lg:flex-row  items-center gap-8 justify-start ">
             <img
-              className="h-36 w-52 rounded-xl border-2 p-3"
+              className="h-36 w-full lg:w-52 rounded-xl border-2 p-3"
               src={product_image}
               alt=""
             />
             <div className="space-y-2">
-              <h1 className="text-2xl text-[#09080F] font-bold">{product_title}</h1>
-              <p className="text-lg text-[#09080fd1] font-normal">{description}</p>
+              <h1 className="text-lg lg:text-2xl text-[#09080F] font-bold">{product_title}</h1>
+              <p className="text-sm lg:text-lg text-[#09080fd1] font-normal">{description}</p>
               <p className="text-xl text-[#09080F] font-bold">Price: {price}k</p>
               <button
                 onClick={()=>handleAddToCart(product)}
