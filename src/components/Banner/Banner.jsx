@@ -17,7 +17,7 @@ const Banner = () => {
             it all!
           </p>
           <Link to='/dashboard'>
-            <button className="text-[#9538E2] text-sm lg:text-xl font-bold bg-white py-2 lg:py-4 px-8 rounded-full">
+            <button className="text-[#9538E2] text-sm lg:text-xl font-bold bg-white py-2 lg:py-4 px-8 mt-6 rounded-full">
               Shop Now
             </button>
           </Link>

@@ -10,7 +10,7 @@ const ArrivalProducts = () => {
         fetch('./new.json')
         .then(res=> res.json())
         .then(data=>{
-            console.log(data);
+            // console.log(data);
             setNewProducts(data)
         })
 

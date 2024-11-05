@@ -89,7 +89,7 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive
                     ? `font-bold underline bg-[rgb(149,56,226)] text-white`
-                    : ``
+                    : `text-black`
                 }
               >
                 New Arrival

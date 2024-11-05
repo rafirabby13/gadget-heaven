@@ -36,7 +36,7 @@ const Product = ({ product }) => {
 
   return (
     <div className="bg-slate-100 rounded-xl ">
-      <div className="py-3 px-2 lg:p-6 space-x-1 lg:space-y-3 space-y-2 flex flex-col justify-between  h-full">
+      <div className="py-3 px-2 lg:p-2 xl:p-6 space-x-1 lg:space-y-3 space-y-2 flex flex-col justify-between  h-full">
         <img
           className="h-24 lg:h-48 rounded-xl w-full"
           src={product_image}

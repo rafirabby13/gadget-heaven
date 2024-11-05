@@ -19,9 +19,9 @@ const Products = ({category}) => {
   return (
    
     
-    <div className="lg:col-span-5  pb-20">
+    <div className="lg:col-span-5 xl:col-span-5  pb-20">
       
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-2
+      <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2
          lg:gap-6">
       {
         products.map(product=> <Product

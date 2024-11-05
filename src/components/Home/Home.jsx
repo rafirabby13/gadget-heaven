@@ -20,7 +20,7 @@ const Home = () => {
       <Banner />
       <div className="mt-10  lg:-mt-40">
       <h1 className="text-[#OBOBOB] font-bold text-xl lg:text-4xl text-center pb-12">Explore Cutting-Edge Gadgets</h1>
-      <div className=" grid grid-cols-1 lg:grid-cols-6 lg:px-32 gap-5 min-h-screen pb-20">
+      <div className=" grid grid-cols-1 lg:grid-cols-7 lg:px-12 xl:px-32 gap-5 min-h-screen pb-20">
         <Sidebar handleCategory={handleCategory} />
         <Outlet />
       </div>
