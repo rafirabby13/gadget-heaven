@@ -8,7 +8,7 @@ import { CartContext } from "../Root/Root.jsx";
 import { IoCartOutline } from "react-icons/io5";
 
 const ArrivalProduct = ({ product }) => {
-  console.log(product);
+//   console.log(product);
   const { handleAddToCart, handleAddToWishList, wishlistDisabled } =
     useContext(CartContext);
   const {
@@ -25,8 +25,8 @@ const ArrivalProduct = ({ product }) => {
     rating,
   } = product;
   return (
-    <div>
-      <div className="border-2 bg-[#ffffff] rounded-2xl  gap-6  mx-auto lg:p-6 py-2 lg:py-0 ">
+    <div className="">
+      <div className="border-2 bg-[#ffffff] rounded-2xl  gap-6  mx-auto lg:p-6 py-2 lg:py-5 ">
         <div
           className="grid  items-center gap-8
         "
@@ -65,7 +65,7 @@ const ArrivalProduct = ({ product }) => {
                 ))}
               </ol>
               <ol className=" lg:space-y-2 text-xs lg:text-xl ">
-                <h1 className="underline lg:text-xl font-semibold">
+                <h1 className="underline lg:text-xl font-semibold uppercase">
                   Highlighted Features
                 </h1>
                 {highlighted_features.map((specs, index) => (
