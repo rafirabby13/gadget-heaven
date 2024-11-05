@@ -2,6 +2,8 @@ import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer.jsx";
 import Navbar from "../Navbar/Navbar.jsx";
 import { createContext, useEffect, useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 export const CartContext = createContext();
 export const TotalContext = createContext();
 
@@ -10,6 +12,8 @@ const Root = () => {
   const [wishList, setWishList] = useState([]);
 
   const [total, setTotal] = useState(0);
+  const [cartDisabled, setCartDisabled] = useState(false);
+  const [wishlistDisabled, setWishlistDisabled] = useState(null);
   //   const [loading, setLoading] = useState(true);
 
   const handleAddToCart = (product) => {
@@ -18,9 +22,10 @@ const Root = () => {
     );
     if (!checkingProductIsOrNot) {
       setCart([...cart, product]);
-      
+      toast.success(`${product.product_title} is added to the cart`)
     } else {
-      alert("product exixts..");
+      
+      setCartDisabled(true)
     }
   };
   const handleAddToWishList = (product) => {
@@ -28,9 +33,12 @@ const Root = () => {
       (wishList) => wishList.product_id == product.product_id
     );
     if (!checkingProductIsOrNot) {
+     
       setWishList([...wishList, product]);
+      toast.success(`Your desired product ${product.product_title} is added to the Wishlist..`)
+
     } else {
-      alert("product exixts.. in wishlist");
+      setWishlistDisabled(true)
     }
   };
   const handleRemoveItemFromWishList = (produc) => {
@@ -39,6 +47,7 @@ const Root = () => {
       (cartData) => cartData.product_id != produc.product_id
     );
     setWishList(reminingData);
+    setWishlistDisabled(false)
   };
 
   const handleSortByPrice = () => {
@@ -73,7 +82,10 @@ const Root = () => {
         handleSortByPrice,
         setCart,
         setWishList,
-        handleRemoveItemFromWishList
+        handleRemoveItemFromWishList,
+        wishlistDisabled,
+        setWishlistDisabled,
+        setCartDisabled
       }}
     >
       <TotalContext.Provider value={{ total, setTotal }}>
@@ -81,6 +93,19 @@ const Root = () => {
         <Outlet />
 
         <Footer />
+        <ToastContainer
+          position="top-center"
+          autoClose={1000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          
+          transition:Flip
+        />
       </TotalContext.Provider>
     </CartContext.Provider>
   );

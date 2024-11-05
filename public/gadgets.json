@@ -7,7 +7,7 @@
     "price": 650,
     "description": "Affordable laptop with solid performance for everyday tasks.",
     "specification": ["Intel Core i5", "8GB RAM", "256GB SSD", "15.6-inch display"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.4
   },
   {
@@ -18,7 +18,7 @@
     "price": 55,
     "description": "Compact and efficient USB-C charger for fast charging.",
     "specification": ["30W", "USB-C Power Delivery", "Compact design"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.7
   },
   {
@@ -29,7 +29,7 @@
     "price": 210,
     "description": "Elegant smartwatch with long battery life and fitness tracking.",
     "specification": ["AMOLED display", "Heart Rate Monitoring", "GPS"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.6
   },
   {
@@ -40,7 +40,7 @@
     "price": 299,
     "description": "Portable power station ideal for camping and emergencies.",
     "specification": ["288Wh capacity", "AC outlets", "USB-C fast charge"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.8
   },
   {
@@ -51,7 +51,7 @@
     "price": 999,
     "description": "Compact smartphone with high-end camera and display.",
     "specification": ["6.1-inch OLED display", "128GB storage", "5G"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.5
   },
   {
@@ -67,7 +67,7 @@
       "512GB SSD",
       "13-inch display"
     ],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.8
   },
   {
@@ -78,7 +78,7 @@
     "price": 69,
     "description": "Fast charging for iPhone and iPad models.",
     "specification": ["20W", "USB-C", "Fast charging"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.8
   },
   {
@@ -89,7 +89,7 @@
     "price": 65,
     "description": "High-speed charger for Samsung devices.",
     "specification": ["25W", "USB-C", "Fast charging"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.7
   },
   {
@@ -104,7 +104,7 @@
       "Heart Rate Monitor",
       "Oxygen level monitor"
     ],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.4
   },
   {
@@ -115,7 +115,7 @@
     "price": 60,
     "description": "Portable power bank with fast recharging.",
     "specification": ["20000mAh", "USB-C", "Quick Charge 3.0"],
-    "availability": false,
+    "availability": "Out of stock",
     "rating": 4.8
   },
   {
@@ -126,7 +126,7 @@
     "price": 79,
     "description": "Sleek and powerful charger for multiple devices.",
     "specification": ["8000mAh", "Lightning & USB-C", "Compact design"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.5
   },
 
@@ -138,7 +138,7 @@
     "price": 67,
     "description": "High-speed USB-C charger for phones and laptops.",
     "specification": ["65W", "USB-C Power Delivery", "Compact size"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.9
   },
   {
@@ -154,7 +154,7 @@
       "1TB SSD",
       "14-inch Retina display"
     ],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.9
   },
   {
@@ -170,7 +170,7 @@
       "A15 Bionic chip",
       "5G"
     ],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.9
   },
   {
@@ -181,7 +181,7 @@
     "price": 850,
     "description": "Samsung's flagship phone with a powerful camera.",
     "specification": ["6.2-inch display", "256GB storage", "Exynos 2200", "5G"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.8
   },
   {
@@ -197,7 +197,7 @@
       "512GB SSD",
       "4K touchscreen"
     ],
-    "availability": false,
+    "availability": "Out of stock",
     "rating": 4.6
   },
   {
@@ -213,7 +213,7 @@
       "512GB SSD",
       "14-inch display"
     ],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.7
   },
   {
@@ -229,7 +229,7 @@
       "256GB SSD",
       "13.3-inch OLED display"
     ],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.5
   },
 
@@ -246,7 +246,7 @@
       "Google Tensor",
       "5G"
     ],
-    "availability": false,
+    "availability": "Out of stock",
     "rating": 4.7
   },
   {
@@ -262,7 +262,7 @@
       "Snapdragon 8 Gen 1",
       "5G"
     ],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.6
   },
   {
@@ -278,7 +278,7 @@
       "Snapdragon 888",
       "5G"
     ],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.7
   },
 
@@ -290,7 +290,7 @@
     "price": 399,
     "description": "Apple's latest smartwatch with health tracking features.",
     "specification": ["Always-on display", "Blood Oxygen sensor", "ECG app"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.8
   },
   {
@@ -301,7 +301,7 @@
     "price": 279,
     "description": "Smartwatch with advanced fitness tracking features.",
     "specification": ["BioActive Sensor", "ECG monitoring", "Wear OS"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.7
   },
   {
@@ -316,7 +316,7 @@
       "Heart Rate Monitor",
       "Alexa integration"
     ],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.5
   },
   {
@@ -327,7 +327,7 @@
     "price": 599,
     "description": "Rugged smartwatch designed for outdoor adventures.",
     "specification": ["GPS", "Heart Rate Sensor", "TOPO maps"],
-    "availability": false,
+    "availability": "Out of stock",
     "rating": 4.6
   },
 
@@ -339,7 +339,7 @@
     "price": 89,
     "description": "Fast charging for Pixel and other USB-C devices.",
     "specification": ["30W", "USB-C", "Compact size"],
-    "availability": false,
+    "availability": "Out of stock",
     "rating": 4.6
   },
   {
@@ -350,7 +350,7 @@
     "price": 99,
     "description": "3-in-1 charger for Apple devices.",
     "specification": ["MagSafe", "USB-C", "Wireless charging"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.8
   },
 
@@ -362,7 +362,7 @@
     "price": 81,
     "description": "High-capacity power bank with fast charging.",
     "specification": ["20100mAh", "USB-C", "18W Power Delivery"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.9
   },
   {
@@ -373,7 +373,7 @@
     "price": 91,
     "description": "Affordable power bank with multiple USB ports.",
     "specification": ["10000mAh", "Dual USB", "18W Fast Charging"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.7
   },
 
@@ -385,7 +385,7 @@
     "price": 83,
     "description": "Rugged and waterproof power bank for outdoor use.",
     "specification": ["7800mAh", "Waterproof", "USB-C & USB-A"],
-    "availability": true,
+    "availability": "In Stock",
     "rating": 4.6
   }
 ]

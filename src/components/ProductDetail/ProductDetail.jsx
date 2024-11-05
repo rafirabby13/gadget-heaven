@@ -9,7 +9,7 @@ import { CartContext } from "../Root/Root.jsx";
 const ProductDetail = () => {
   const { productId } = useParams();
   //   console.log(productId);
-  const { handleAddToCart , handleAddToWishList} = useContext(CartContext);
+  const { handleAddToCart , handleAddToWishList,wishlistDisabled} = useContext(CartContext);
 
   
 
@@ -64,7 +64,7 @@ const ProductDetail = () => {
               Price: {price}k
             </h1>
             <div className="text-[#309C08] border-2 border-[#309C08] rounded-3xl py-1 lg:py-2 px-3 font-bold bg-[#2f9c0830] w-fit text-xs lg:text-lg">
-              In Stock
+              {availability}
             </div>
             <h1 className="text-[#09080f7b] text-xs lg:text-lg font-normal">
               {description}
@@ -121,9 +121,9 @@ const ProductDetail = () => {
                 </div>
               </button>
               
-              <div onClick={()=>handleAddToWishList(foundProduct)} className="bg-slate-100 px-3 py-3 rounded-3xl text-2xl font-bold">
+              <button disabled={wishlistDisabled}  onClick={()=>handleAddToWishList(foundProduct)} className="bg-slate-100 px-3 py-3 rounded-3xl text-2xl font-bold">
                 <FaRegHeart />
-              </div>
+              </button>
              
             </div>
           </div>

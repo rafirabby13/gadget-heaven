@@ -2,10 +2,13 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
 import CartDetail from "../CartDetail/CartDetail.jsx";
 import SortSection from "../SortSection/SortSection.jsx";
+import { useContext } from "react";
+import { CartContext } from "../Root/Root.jsx";
 
 const ProductAddedDetail = () => {
   const location = useLocation()
-  const currentLoc = location.pathname
+  const currentLoc = location.pathname;
+  const {wishlistDisabled} = useContext(CartContext)
  
   return (
     <div className="min-h-screen">
@@ -23,7 +26,7 @@ const ProductAddedDetail = () => {
                 Cart
               </button>
             </Link>
-            <Link to='/dashboard/wishDetail'>
+            <Link  to='/dashboard/wishDetail'>
               <button className={`text-sm lg:text-xl border-2 font-bold  py-2 lg:py-4 px-7  lg:px-12 rounded-full  ${currentLoc!='/dashboard'? 'bg-white text-[#9538E2]' : 'bg-[#9538E2] text-white'}`}>
                 Wishlist
               </button>

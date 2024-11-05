@@ -1,7 +1,30 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { CartContext } from "../Root/Root.jsx";
 
 const Product = ({ product }) => {
   const { product_id, product_title, product_image, price } = product;
+  const {wishList,wishlistDisabled,setWishlistDisabled, setCartDisabled, cart} = useContext(CartContext)
+
+
+  const handleWishlistDisabledButton=(pro)=>{
+    // console.log(pro);
+    const isExistsInWishList =  wishList.find(wish=> wish.product_id == pro.product_id)
+    const isExistsInCart =  cart.find(cart=> cart.product_id == pro.product_id)
+    if (isExistsInWishList) {
+      setWishlistDisabled(true)
+    }
+    else{
+      setWishlistDisabled(false)
+    }
+    if (isExistsInCart) {
+      setCartDisabled(true)
+    }
+    else{
+      setCartDisabled(false)
+    }
+
+  }
 
   return (
     <div className="bg-slate-100 rounded-xl ">
@@ -16,7 +39,7 @@ const Product = ({ product }) => {
           </p>
 
           <Link to={`/product/${product_id}`}>
-            <button className="py-1 px-3 lg:py-3 lg:px-5 rounded-full border-2 text-[#9538E2] border-[#9538E2] text-xs lg:text-lg  ">
+            <button onClick={()=>handleWishlistDisabledButton(product)} className="py-1 px-3 lg:py-3 lg:px-5 rounded-full border-2 text-[#9538E2] border-[#9538E2] text-xs lg:text-lg  ">
               View Details
             </button>
           </Link>

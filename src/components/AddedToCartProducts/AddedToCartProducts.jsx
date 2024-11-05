@@ -8,7 +8,7 @@ const AddedToCartProducts = ({product}) => {
 
 
 
-    const { cart, setCart } = useContext(CartContext);
+    const { cart, setCart,setCartDisabled } = useContext(CartContext);
   const { product_title, product_image, description, price } = product;
 
   const handleRemoveItemFromCart = (produc) => {
@@ -17,6 +17,8 @@ const AddedToCartProducts = ({product}) => {
       (cartData) => cartData.product_id != produc.product_id
     );
     setCart(reminingData);
+    setCartDisabled(false)
+
   };
 
 
