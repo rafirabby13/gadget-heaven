@@ -16,12 +16,14 @@ import ProductAddedDetail from './components/ProductAddedDetail/ProductAddedDeta
 import Statistics from './components/Statristics/Statistics.jsx'
 import NewArrival from './components/NewArrival/NewArrival.jsx'
 import ArrivalProducts from './components/ArrivalProducts/ArrivalProducts.jsx'
+import ErrorPage from './components/ErrorPage/ErrorPage.jsx'
 
 
 const router = createBrowserRouter([
   {
     path:'/',
     element: <Root/>,
+    errorElement: <ErrorPage/>,
     children: [
       {
         path: '/',

@@ -3,9 +3,13 @@ import { Outlet } from "react-router-dom";
 import phone from "../../assets/phone.jpg";
 import laptop from "../../assets/laptop.png";
 import watch from "../../assets/watch.png";
+import { Helmet } from "react-helmet";
 const NewArrival = () => {
   return (
     <div className="min-h-screen lg:max-w-[90%] mx-auto">
+        <Helmet>
+        <title>New Arrival | Gadget Genius</title>
+      </Helmet>
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full h-40 lg:h-[500px]">
           <img src={phone} className="w-full" />
