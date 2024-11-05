@@ -14,6 +14,8 @@ import CartDetail from './components/CartDetail/CartDetail.jsx'
 import WishListDetails from './components/WishListDetails/WishListDetails.jsx'
 import ProductAddedDetail from './components/ProductAddedDetail/ProductAddedDetail.jsx'
 import Statistics from './components/Statristics/Statistics.jsx'
+import NewArrival from './components/NewArrival/NewArrival.jsx'
+import ArrivalProducts from './components/ArrivalProducts/ArrivalProducts.jsx'
 
 
 const router = createBrowserRouter([
@@ -59,6 +61,16 @@ const router = createBrowserRouter([
         path: '/statistics',
         element: <Statistics/>
       },
+      {
+        path: '/new',
+        element: <NewArrival/>,
+        children:[
+          {
+            path:'',
+            element: <ArrivalProducts/>
+          }
+        ]
+      }
       // {
       //   path: '/wishDetail',
       //   element: <WishListDetails/>

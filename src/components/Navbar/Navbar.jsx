@@ -1,4 +1,5 @@
 import { Link, NavLink, useLocation } from "react-router-dom";
+import logo from '../../assets/logo.jpg'
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import { useContext } from "react";
@@ -7,19 +8,29 @@ const Navbar = () => {
   const { cart, wishList } = useContext(CartContext);
   // console.log(cart);
 
-  const location =  useLocation()
-let currentLoc=location.pathname;
-const id = currentLoc.split('/')[2]
-// console.log(currentLoc.split('/')[2]);
+  const location = useLocation();
+  let currentLoc = location.pathname;
+  const id = currentLoc.split("/")[2];
+  // console.log(currentLoc.split('/')[2]);
 
   return (
-    <div className={`navbar  ${currentLoc !='/statistics' && currentLoc !='/dashboard'&& currentLoc !='/dashboard/wishDetail' && currentLoc !=`/product/${id}` ? 'bg-[rgb(149,56,226)]  text-[#FFFFFF]': 'bg-white'}  rounded-t-3xl pt-8 lg:max-w-[90%] mx-auto lg:px-20`}>
+    <div
+      className={`navbar  ${
+        currentLoc != "/statistics" &&
+        currentLoc != "/dashboard" &&
+        currentLoc != "/new" &&
+        currentLoc != "/dashboard/wishDetail" &&
+        currentLoc != `/product/${id}`
+          ? "bg-[rgb(149,56,226)]  text-[#FFFFFF]"
+          : "bg-white"
+      }  rounded-t-3xl pt-8 lg:max-w-[90%] mx-auto `}
+    >
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className=" lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-7 w-7"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -37,28 +48,107 @@ const id = currentLoc.split('/')[2]
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-            <NavLink to='/' className={({isActive})=> isActive? ` underline font-bold text-black bg-[rgb(149,56,226)]`:`text-black`}>Home</NavLink>
-          </li>
-          <li>
-            <NavLink to='/statistics'  className={({isActive})=> isActive? ` underline font-bold bg-[rgb(149,56,226)] text-black`:`text-black`}>Statistics</NavLink>
-          </li>
-          <li>
-            <NavLink to='/dashboard'  className={({isActive})=> isActive? `font-bold underline bg-[rgb(149,56,226)] text-black`:`text-black`}>Dashboard</NavLink>
-          </li>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? ` underline font-bold text-black bg-[rgb(149,56,226)]`
+                    : `text-black`
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/statistics"
+                className={({ isActive }) =>
+                  isActive
+                    ? ` underline font-bold bg-[rgb(149,56,226)] text-black`
+                    : `text-black`
+                }
+              >
+                Statistics
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/dashboard"
+                className={({ isActive }) =>
+                  isActive
+                    ? `font-bold underline bg-[rgb(149,56,226)] text-black`
+                    : `text-black`
+                }
+              >
+                Dashboard
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/new"
+                className={({ isActive }) =>
+                  isActive
+                    ? `font-bold underline bg-[rgb(149,56,226)] text-white`
+                    : ``
+                }
+              >
+                New Arrival
+              </NavLink>
+            </li>
           </ul>
         </div>
-        <a className=" text-xl font-bold">Gadget Heaven</a>
+       <div className="flex items-center gap-1 lg:gap-3 pl-3 lg:pl-0">
+        <img className="h-8 w-8 lg:h-12 lg:w-12 rounded-full" src={logo} alt="" />
+       <Link to='/' className="text-xs lg:text-3xl font-bold">Gadget Heaven</Link>
+       </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <NavLink to='/' className={({isActive})=> isActive? ` underline font-bold text-white`:``}>Home</NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? ` underline font-bold text-white` : ``
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <NavLink to='/statistics'  className={({isActive})=> isActive? ` underline font-bold bg-[rgb(149,56,226)] text-white`:``}>Statistics</NavLink>
+            <NavLink
+              to="/statistics"
+              className={({ isActive }) =>
+                isActive
+                  ? ` underline font-bold bg-[rgb(149,56,226)] text-white`
+                  : ``
+              }
+            >
+              Statistics
+            </NavLink>
           </li>
           <li>
-            <NavLink to='/dashboard'  className={({isActive})=> isActive? `font-bold underline bg-[rgb(149,56,226)] text-white`:``}>Dashboard</NavLink>
+            <NavLink
+              to="/dashboard"
+              className={({ isActive }) =>
+                isActive
+                  ? `font-bold underline bg-[rgb(149,56,226)] text-white`
+                  : ``
+              }
+            >
+              Dashboard
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/new"
+              className={({ isActive }) =>
+                isActive
+                  ? `font-bold underline bg-[rgb(149,56,226)] text-white`
+                  : ``
+              }
+            >
+              New Arrival
+            </NavLink>
           </li>
         </ul>
       </div>

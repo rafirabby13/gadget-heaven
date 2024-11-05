@@ -1,233 +1,57 @@
 [
-    {
-      "product_id": "C001",
-      "product_title": "Dell XPS 13",
-      "product_image": "https://i.ibb.co.com/Z1Dhv8m/Dell-XPS-13.webp",
-      "category": "computers",
-      "price": 1200,
-      "description": "A high-performance laptop with a sleek design.",
-      "specification": [
-        "Intel Core i7",
-        "16GB RAM",
-        "512GB SSD",
-        "13-inch display"
-      ],
-      "availability": true,
-      "rating": 4.8
-    },
-    {
-      "product_id": "C002",
-      "product_title": "MacBook Pro 14",
-      "product_image": "https://i.ibb.co.com/z8Kdxvf/Mac-Book-Pro-14.png",
-      "category": "computers",
-      "price": 2000,
-      "description": "Apple's latest MacBook Pro with M1 Pro chip.",
-      "specification": [
-        "M1 Pro chip",
-        "16GB RAM",
-        "1TB SSD",
-        "14-inch Retina display"
-      ],
-      "availability": true,
-      "rating": 4.9
-    },
-    {
-      "product_id": "C003",
-      "product_title": "HP Spectre x360",
-      "product_image": "https://i.ibb.co.com/7XgHJVm/HP-Spectre-x360.jpg",
-      "category": "computers",
-      "price": 1400,
-      "description": "A versatile 2-in-1 laptop with a stunning 4K display.",
-      "specification": [
-        "Intel Core i7",
-        "16GB RAM",
-        "512GB SSD",
-        "4K touchscreen"
-      ],
-      "availability": false,
-      "rating": 4.6
-    },
-    {
-      "product_id": "C004",
-      "product_title": "Lenovo ThinkPad X1 Carbon",
-      "product_image": "https://i.ibb.co.com/Nn7Nsg4/Lenovo-Think-Pad-X1-Carbon.webp",
-      "category": "computers",
-      "price": 1600,
-      "description": "A durable and high-performance business laptop.",
-      "specification": [
-        "Intel Core i7",
-        "16GB RAM",
-        "512GB SSD",
-        "14-inch display"
-      ],
-      "availability": true,
-      "rating": 4.7
-    },
-    {
-      "product_id": "C005",
-      "product_title": "Asus ZenBook 13",
-      "product_image": "https://i.ibb.co.com/xD87b5R/Asus-Zen-Book-13.webp",
-      "category": "computers",
-      "price": 1000,
-      "description": "An ultra-slim laptop with great performance.",
-      "specification": [
-        "AMD Ryzen 7",
-        "8GB RAM",
-        "256GB SSD",
-        "13.3-inch OLED display"
-      ],
-      "availability": true,
-      "rating": 4.5
-    },
-    {
-      "product_id": "C006",
-      "product_title": "Microsoft Surface Laptop 4",
-      "product_image": "https://i.ibb.co.com/2FfJ6XY/Microsoft-Surface-Laptop-4.jpg",
-      "category": "computers",
-      "price": 1300,
-      "description": "Lightweight laptop with excellent battery life.",
-      "specification": [
-        "Intel Core i5",
-        "8GB RAM",
-        "512GB SSD",
-        "13.5-inch touchscreen"
-      ],
-      "availability": true,
-      "rating": 4.6
-    },
-  
-    {
-      "product_id": "CH001",
-      "product_title": "Anker PowerPort III",
-      "product_image": "https://i.ibb.co.com/0nLWyj6/Anker-Power-Port-III.jpg",
-      "category": "chargers",
-      "price": 50,
-      "description": "High-speed USB-C charger for phones and laptops.",
-      "specification": ["65W", "USB-C Power Delivery", "Compact size"],
-      "availability": true,
-      "rating": 4.9
-    },
-    {
-      "product_id": "CH002",
-      "product_title": "Apple 20W USB-C Power Adapter",
-      "product_image": "https://i.ibb.co.com/XLKKtKX/Apple-20-W-USB-C-Power-Adapter.webp",
-      "category": "chargers",
-      "price": 60,
-      "description": "Fast charging for iPhone and iPad models.",
-      "specification": ["20W", "USB-C", "Fast charging"],
-      "availability": true,
-      "rating": 4.8
-    },
-    {
-      "product_id": "CH003",
-      "product_title": "Samsung Super Fast Charger",
-      "product_image": "https://i.ibb.co.com/JB6kqnn/Samsung-Super-Fast-Charger.webp",
-      "category": "chargers",
-      "price": 55,
-      "description": "High-speed charger for Samsung devices.",
-      "specification": ["25W", "USB-C", "Fast charging"],
-      "availability": true,
-      "rating": 4.7
-    },
-    {
-      "product_id": "CH004",
-      "product_title": "Google 30W USB-C Charger",
-      "product_image": "https://i.ibb.co.com/0FWwypN/Google-30-W-USB-C-Charger.webp",
-      "category": "chargers",
-      "price": 70,
-      "description": "Fast charging for Pixel and other USB-C devices.",
-      "specification": ["30W", "USB-C", "Compact size"],
-      "availability": false,
-      "rating": 4.6
-    },
-    {
-      "product_id": "CH005",
-      "product_title": "Belkin Boost Charge Pro",
-      "product_image": "https://i.ibb.co.com/Rvps1NJ/Belkin-Boost-Charge-Pro.webp",
-      "category": "chargers",
-      "price": 75,
-      "description": "3-in-1 charger for Apple devices.",
-      "specification": ["MagSafe", "USB-C", "Wireless charging"],
-      "availability": true,
-      "rating": 4.8
-    },
-    {
-      "product_id": "CH006",
-      "product_title": "AUKEY Omnia 65W PD Charger",
-      "product_image": "https://i.ibb.co.com/XyWbYjP/AUKEY-Omnia-65W.jpg",
-      "category": "chargers",
-      "price": 85,
-      "description": "Compact yet powerful charger for multiple devices.",
-      "specification": ["65W", "USB-C", "GaN technology"],
-      "availability": true,
-      "rating": 4.7
-    },
-  
-    {
-      "product_id": "SW001",
-      "product_title": "Apple Watch Series 7",
-      "product_image": "https://i.ibb.co.com/XxsQzbv/Apple-Watch-Series-7-45mm-GPS-Smartwatch.jpg",
-      "category": "smart watches",
-      "price": 399,
-      "description": "Apple's latest smartwatch with health tracking features.",
-      "specification": ["Always-on display", "Blood Oxygen sensor", "ECG app"],
-      "availability": true,
-      "rating": 4.8
-    },
-    {
-      "product_id": "SW002",
-      "product_title": "Samsung Galaxy Watch 4",
-      "product_image": "https://i.ibb.co.com/ynHkwT2/galaxy-watch4-classic-black-design-your-own.jpg",
-      "category": "smart watches",
-      "price": 279,
-      "description": "Smartwatch with advanced fitness tracking features.",
-      "specification": ["BioActive Sensor", "ECG monitoring", "Wear OS"],
-      "availability": true,
-      "rating": 4.7
-    },
-    {
-      "product_id": "SW003",
-      "product_title": "Fitbit Versa 3",
-      "product_image": "https://i.ibb.co.com/HKpPJM0/Fitbit-Versa-3.jpg",
-      "category": "smart watches",
-      "price": 229,
-      "description": "Fitbit smartwatch with built-in GPS and heart rate monitor.",
-      "specification": ["Built-in GPS", "Heart Rate Monitor", "Alexa integration"],
-      "availability": true,
-      "rating": 4.5
-    },
-    {
-      "product_id": "SW004",
-      "product_title": "Garmin Fenix 6",
-      "product_image": "https://i.ibb.co.com/1TdpB47/Garmin-Fenix-6.jpg",
-      "category": "smart watches",
-      "price": 599,
-      "description": "Rugged smartwatch designed for outdoor adventures.",
-      "specification": ["GPS", "Heart Rate Sensor", "TOPO maps"],
-      "availability": false,
-      "rating": 4.6
-    },
-    {
-      "product_id": "SW005",
-      "product_title": "Huawei Watch GT 2",
-      "product_image": "https://i.ibb.co.com/vss7sDm/Huawei-Watch-GT-2.jpg",
-      "category": "smart watches",
-      "price": 199,
-      "description": "Stylish smartwatch with 2-week battery life.",
-      "specification": ["AMOLED display", "Heart Rate Monitor", "Sleep tracking"],
-      "availability": true,
-      "rating": 4.4
-    },
-    {
-      "product_id": "SW006",
-      "product_title": "Amazfit Bip U Pro",
-      "product_image": "https://i.ibb.co.com/Zjhp9GL/Amazfit-Bip-U-Pro.jpg",
-      "category": "smart watches",
-      "price": 100,
-      "description": "Affordable smartwatch with built-in GPS.",
-      "specification": ["Built-in GPS", "Heart Rate Monitor", "SpO2 sensor"],
-      "availability": true,
-      "rating": 4.3
-    }
-  ]
-  
+  {
+    "product_id": "T001",
+    "product_title": "Apple iPad Pro 11",
+    "product_image": "https://i.ibb.co.com/QFBM4G3/Apple-i-Pad-Pro-11.jpg",
+    "category": "tablets",
+    "price": 800,
+    "description": "Apple's powerful tablet with M1 chip and advanced display technology.",
+    "specification": ["11-inch Liquid Retina display", "M1 chip", "128GB storage", "5G connectivity"],
+    "availability": "In Stock",
+    "rating": 4.9
+  },
+  {
+    "product_id": "T003",
+    "product_title": "Microsoft Surface Pro 8",
+    "product_image": "https://i.ibb.co.com/Fh5M8Zw/Microsoft-Surface-Pro-8.jpg",
+    "category": "tablets",
+    "price": 950,
+    "description": "Versatile tablet with powerful performance for productivity.",
+    "specification": ["13-inch PixelSense display", "Intel Core i5", "8GB RAM", "128GB SSD"],
+    "availability": "Out of Stock",
+    "rating": 4.7
+  },
+  {
+    "product_id": "T004",
+    "product_title": "Lenovo Tab P11 Pro",
+    "product_image": "https://i.ibb.co.com/1QL5Kmz/Lenovo-Tab-P11-Pro.jpg",
+    "category": "tablets",
+    "price": 450,
+    "description": "Affordable tablet with a high-resolution OLED display.",
+    "specification": ["11.5-inch OLED display", "Snapdragon 730G", "128GB storage", "6GB RAM"],
+    "availability": "In Stock",
+    "rating": 4.5
+  },
+  {
+    "product_id": "T005",
+    "product_title": "Huawei MatePad Pro",
+    "product_image": "https://i.ibb.co.com/zG4ZN5t/huawei-matepad-pro-13-2-kv-xs.webp",
+    "category": "tablets",
+    "price": 650,
+    "description": "Premium tablet with high-end specs and sleek design.",
+    "specification": ["10.8-inch display", "Kirin 990", "256GB storage", "8GB RAM"],
+    "availability": "Out of Stock",
+    "rating": 4.6
+  },
+  {
+    "product_id": "T006",
+    "product_title": "Amazon Fire HD 10",
+    "product_image": "https://i.ibb.co.com/D5qRGC4/Amazon-Fire-HD-10-Tablet.jpg",
+    "category": "tablets",
+    "price": 150,
+    "description": "Budget-friendly tablet with Alexa integration.",
+    "specification": ["10.1-inch display", "Octa-core processor", "32GB storage", "3GB RAM"],
+    "availability": "In Stock",
+    "rating": 4.3
+  }
+]
