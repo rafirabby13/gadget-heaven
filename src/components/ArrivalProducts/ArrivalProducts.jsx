@@ -19,7 +19,7 @@ const ArrivalProducts = () => {
         <div className="pb-40">
               <h1 className="text-xl lg:text-6xl font-bold  text-center py-4 lg:py-12 underline">New Arrival Products</h1>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6">
                 {
                     newProducts.map((product)=> <ArrivalProduct
                     key={product.product_id}

@@ -23,7 +23,7 @@ const SelectedCategory = () => {
       });
   }, [category]);
   return (
-    <div className="lg:col-span-5 xl:col-span-5">
+    <div className="lg:col-span-6 xl:col-span-6">
       
 
       {

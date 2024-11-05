@@ -26,7 +26,7 @@ const ArrivalProduct = ({ product }) => {
   } = product;
   return (
     <div className="">
-      <div className="border-2 bg-[#ffffff] rounded-2xl  gap-6  mx-auto lg:p-6 py-2 lg:py-5 ">
+      <div className="border-2 bg-[#ffffff] rounded-2xl  gap-6  mx-auto lg:p-2 xl:p-6 py-2 lg:py-5 ">
         <div
           className="grid  items-center gap-8
         "
@@ -44,12 +44,12 @@ const ArrivalProduct = ({ product }) => {
               Price: {price}k
             </h1>
             <div className="flex items-center justify-between">
-              <div className="text-[#309C08] border-2 border-[#309C08] rounded-3xl py-1 lg:py-2 px-3 font-bold bg-[#2f9c0830] w-fit text-xs lg:text-lg">
+              <div className="text-[#309C08] border-2 border-[#309C08] rounded-3xl py-1 lg:py-2 px-2 xl:px-3 font-bold bg-[#2f9c0830] w-fit text-xs lg:text-sm">
                 {availability}
               </div>
               <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
-                <div className="badge badge-secondary p-3 lg:p-6 lg:text-lg text-xs font-bold">Warranty: {warranty}</div>
-                <div className="badge badge-secondary p-3 lg:p-6 lg:text-lg text-xs font-bold">{discount}</div>
+                <div className="badge py-2 lg:py-5 px-2 xl:px-3  badge-secondary lg:text-lg text-xs font-bold">Warranty: {warranty}</div>
+                <div className="badge py-2 lg:py-5 px-2 xl:px-3 badge-secondary lg:text-lg text-xs font-bold">{discount}</div>
               </div>
             </div>
 
