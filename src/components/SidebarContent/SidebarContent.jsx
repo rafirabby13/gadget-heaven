@@ -18,7 +18,7 @@ const SidebarContent = ({ category, handleCategory }) => {
       >
         <div
           onClick={() => handleCategory(category)}
-          className={`py-5 px-5 rounded-3xl text-start ${
+          className={`py-2 lg:py-5 px-5 rounded-3xl text-start ${
             actv ? "bg-[#9538E2] text-white exact" : "bg-[#47464d1e] "
           }`}
         >
