@@ -9,7 +9,7 @@ import { IoCartOutline } from "react-icons/io5";
 
 const ArrivalProduct = ({ product }) => {
 //   console.log(product);
-  const { handleAddToCart, handleAddToWishList, wishlistDisabled ,setCartDisabled, cartDisabled, setWishlistDisabled, } =
+  const { handleAddToCart, handleAddToWishList, wishlistDisabled ,setCartDisabled, cartDisabled, setWishlistDisabled, wishList} =
     useContext(CartContext);
     const [isDisabled, setIsDisabled] = useState(false);
   const {
@@ -24,16 +24,12 @@ const ArrivalProduct = ({ product }) => {
     specification,
     availability,
     rating,
+    product_id
   } = product;
-  useEffect(() => {
-    // Reset or set the cartDisabled and wishlistDisabled states when this product component is loaded
-    if (!cartDisabled[product.product_id]) {
-      setCartDisabled(prev => ({ ...prev, [product.product_id]: false }));
-    }
-    if (!wishlistDisabled[product.product_id]) {
-      setWishlistDisabled(prev => ({ ...prev, [product.product_id]: false }));
-    }
-  }, [product.product_id, cartDisabled, wishlistDisabled, setCartDisabled, setWishlistDisabled]);
+  
+
+const isTrueWishList = !!wishList.find(item=>item.product_id==product_id)
+
 
   
 
@@ -107,7 +103,17 @@ const ArrivalProduct = ({ product }) => {
                 {rating}
               </h1>
             </div>
-            
+            <button
+               
+                onClick={() => {
+                 
+                  handleAddToWishList(product)
+                }}
+                className={`${isTrueWishList ? 'bg-slate-50 text-gray-300': 'bg-[#9538E2] text-white'} px-6 py-3 rounded-3xl text-2xl font-bold flex items-center gap-3 hover:bg-[#9538e2e6]`}
+                disabled={wishList.find(item=>item.product_id==product_id)}
+              >
+               Add to Wishlist <FaRegHeart />
+              </button>
           </div>
         </div>
       </div>

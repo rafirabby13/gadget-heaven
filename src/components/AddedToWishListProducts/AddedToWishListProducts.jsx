@@ -36,9 +36,7 @@ const isTrueCart = !!cart.find(item=>item.product_id==product.product_id)
                 className={`${isTrueCart ? 'bg-[#cceadb]' : 'bg-[#9538E2]'} text-white font-bold text-sm lg:text-lg flex items-center gap-3 py-2 px-6 rounded-3xl`} disabled={cart.find(item=>item.product_id==product.product_id)}
               >
                 Add To Cart
-                {/* <div className="font-bold text-sm lg:text-xl">
-                  <IoCartOutline />
-                </div> */}
+              
               </button>
             </div>
           </div>
