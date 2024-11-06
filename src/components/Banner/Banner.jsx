@@ -5,7 +5,7 @@ const Banner = () => {
     <div>
       <div
         className="bg-[#9538E2] pt-5
-       lg:pt-12   rounded-b-3xl relative pb-6 lg:pb-72 lg:max-w-[90%] mx-auto"
+       lg:pt-12   rounded-b-xl relative pb-6 lg:pb-72 lg:max-w-[90%] mx-auto"
       >
         <div className="text-center text-white space-y-2 lg:space-y-7 lg:w-3/4 mx-auto">
           <h1 className="text-xl lg:text-6xl font-bold ">
