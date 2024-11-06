@@ -38,9 +38,7 @@ const isTrueWishList = !!wishList.find(item=>item.product_id==productId)
         <div className="text-center text-white space-y-3 lg:space-y-7 lg:w-2/3 mx-auto">
           <h1 className="text-xl lg:text-6xl font-bold ">Product Details</h1>
           <p className="text-sm lg:text-lg font-normal ">
-            Explore the latest gadgets that will take your experience to the
-            next level. From smart devices to the coolest accessories, we have
-            it all!
+          Explore top-rated gadgets and essentials, handpicked for quality and performance. Unbeatable deals on the latest tech await you!
           </p>
         </div>
       </div>

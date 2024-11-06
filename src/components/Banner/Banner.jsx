@@ -12,9 +12,7 @@ const Banner = () => {
             Upgrade Your Tech Accessorize with Gadget Heaven Accessories
           </h1>
           <p className="text-sm lg:text-lg font-normal ">
-            Explore the latest gadgets that will take your experience to the
-            next level. From smart devices to the coolest accessories, we have
-            it all!
+          Discover cutting-edge gadgets designed to elevate your everyday experience. From smart tech to must-have accessories, find it all here!
           </p>
           <Link to='/dashboard'>
             <button className="text-[#9538E2] text-sm lg:text-xl font-bold bg-white py-2 lg:py-4 px-8 mt-6 rounded-full">
