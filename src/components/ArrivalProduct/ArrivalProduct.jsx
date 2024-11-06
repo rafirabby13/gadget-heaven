@@ -58,7 +58,7 @@ const isTrueWishList = !!wishList.find(item=>item.product_id==product_id)
               </div>
               <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
                 <div className="badge py-2 lg:py-5 px-2 xl:px-3  badge-secondary lg:text-lg text-xs font-bold">Warranty: {warranty}</div>
-                {/* <div className="badge py-2 lg:py-5 px-2 xl:px-3 badge-secondary lg:text-lg text-xs font-bold">{discount}</div> */}
+               
               </div>
             </div>
 

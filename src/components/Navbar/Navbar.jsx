@@ -92,7 +92,7 @@ const Navbar = () => {
                     : `text-black`
                 }
               >
-                Upcoming Products
+                New Arrival
               </NavLink>
             </li>
           </ul>
@@ -147,7 +147,7 @@ const Navbar = () => {
                   : ``
               }
             >
-              Upcoming Products
+              New Arrival
             </NavLink>
           </li>
         </ul>
