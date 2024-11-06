@@ -7,10 +7,10 @@ import { MdOutlineVerified } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 
 const SortSection = () => {
-    const { cart, handleSortByPrice, setWishList, setCart } =
+    const { cart, handleSortByPrice, setWishList, setCart , total, setTotal} =
     useContext(CartContext);
     
-   const { total, setTotal} = useContext(TotalContext)
+  //  const { total, setTotal} = useContext(TotalContext)
  const navigate = useNavigate()
 
 

@@ -85,7 +85,8 @@ const Root = () => {
         handleRemoveItemFromWishList,
         wishlistDisabled,
         setWishlistDisabled,
-        setCartDisabled
+        setCartDisabled,
+        total, setTotal
       }}
     >
       <TotalContext.Provider value={{ total, setTotal }}>

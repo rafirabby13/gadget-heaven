@@ -30,7 +30,7 @@ const AddedToCartProducts = ({product}) => {
         <div className="flex flex-col-reverse lg:flex-row justify-between gap-2 lg:gap-8 items-start">
           <div className="flex flex-col lg:flex-row  items-center gap-8 justify-start ">
             <img
-              className="h-36 w-full lg:w-52 rounded-xl border-2 p-3"
+              className="h-36 w-60 md:w-52 rounded-xl border-2 p-3"
               src={product_image}
               alt=""
             />
