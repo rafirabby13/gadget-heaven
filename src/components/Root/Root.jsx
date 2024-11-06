@@ -12,8 +12,10 @@ const Root = () => {
   const [wishList, setWishList] = useState([]);
 
   const [total, setTotal] = useState(0);
-  const [cartDisabled, setCartDisabled] = useState(false);
-  const [wishlistDisabled, setWishlistDisabled] = useState(null);
+  const [cartDisabled, setCartDisabled] = useState({});
+  const [wishlistDisabled, setWishlistDisabled] = useState({});
+  
+
   //   const [loading, setLoading] = useState(true);
 
   const handleAddToCart = (product) => {
@@ -23,9 +25,12 @@ const Root = () => {
     if (!checkingProductIsOrNot) {
       setCart([...cart, product]);
       toast.success(`${product.product_title} is added to the cart`)
+      // setCartDisabled();
+      console.log(cartDisabled);
     } else {
+      // setIsDisabled(false)
       
-      setCartDisabled(true)
+      // setCartDisabled(true)
     }
   };
   const handleAddToWishList = (product) => {
@@ -36,9 +41,13 @@ const Root = () => {
      
       setWishList([...wishList, product]);
       toast.success(`Your desired product ${product.product_title} is added to the Wishlist..`)
+      
+
 
     } else {
-      setWishlistDisabled(true)
+      // setWishlistDisabled(true)
+      // setCartDisabled(true)
+
     }
   };
   const handleRemoveItemFromWishList = (produc) => {
@@ -46,6 +55,8 @@ const Root = () => {
     const reminingData = [...wishList].filter(
       (cartData) => cartData.product_id != produc.product_id
     );
+    setCartDisabled(false)
+
     setWishList(reminingData);
     setWishlistDisabled(false)
   };
@@ -84,6 +95,7 @@ const Root = () => {
         setWishList,
         handleRemoveItemFromWishList,
         wishlistDisabled,
+        cartDisabled,
         setWishlistDisabled,
         setCartDisabled,
         total, setTotal

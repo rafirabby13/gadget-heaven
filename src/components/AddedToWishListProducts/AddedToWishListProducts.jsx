@@ -5,13 +5,14 @@ import { RxCross2 } from 'react-icons/rx';
 import { CartContext } from '../Root/Root.jsx';
 
 const AddedToWishListProducts = ({product}) => {
-    const { wishList, setWishList, handleAddToCart ,cart, setCart, handleRemoveItemFromWishList} = useContext(CartContext);
+    const { wishList, setWishList, handleAddToCart ,cart, setCart, handleRemoveItemFromWishList,wishlistDisabled,setCartDisabled, cartDisabled,setWishlistDisabled} = useContext(CartContext);
     
 
   const { product_title, product_image, description, price } = product;
 
  
 
+const isTrueCart = !!cart.find(item=>item.product_id==product.product_id)
  
 
     return (
@@ -28,12 +29,16 @@ const AddedToWishListProducts = ({product}) => {
               <h1 className="text-lg lg:text-2xl text-[#09080F] font-bold">{product_title}</h1>
               <p className="text-sm lg:text-lg text-[#09080fd1] font-normal">{description}</p>
               <p className="text-xl text-[#09080F] font-bold">Price: {price}k</p>
-              <button
-                onClick={()=>handleAddToCart(product)}
-                className="bg-[#9538E2] text-white font-bold text-lg flex items-center gap-3 py-2 px-6 rounded-3xl"
+              <button 
+                onClick={() =>{ 
+                  
+                  handleAddToCart(product)}}
+                className={`${isTrueCart ? 'bg-[#cceadb]' : 'bg-[#9538E2]'} text-white font-bold text-sm lg:text-lg flex items-center gap-3 py-2 px-6 rounded-3xl`} disabled={cart.find(item=>item.product_id==product.product_id)}
               >
                 Add To Cart
-                
+                {/* <div className="font-bold text-sm lg:text-xl">
+                  <IoCartOutline />
+                </div> */}
               </button>
             </div>
           </div>

@@ -11,13 +11,14 @@ import { Helmet } from "react-helmet";
 
 const ProductDetail = () => {
   const { productId } = useParams();
-  //   console.log(productId);
-  const { handleAddToCart, handleAddToWishList, wishlistDisabled } =
-    useContext(CartContext);
-
+    console.log(productId);
+  
+  
   const data = useLoaderData();
   const foundProduct = data.find((product) => product.product_id === productId);
-
+  const { handleAddToCart,cart, handleAddToWishList, wishlistDisabled,setCartDisabled, cartDisabled,wishList,setWishlistDisabled } =
+  useContext(CartContext);
+  console.log(cart);
   const {
     product_title,
     product_image,
@@ -28,7 +29,8 @@ const ProductDetail = () => {
     availability,
     rating,
   } = foundProduct;
-
+const isTrueCart = !!cart.find(item=>item.product_id==productId)
+const isTrueWishList = !!wishList.find(item=>item.product_id==productId)
   return (
     <div className="min-h-screen ">
    
@@ -92,9 +94,11 @@ const ProductDetail = () => {
               </h1>
             </div>
             <div className="flex items-center gap-5">
-              <button
-                onClick={() => handleAddToCart(foundProduct)}
-                className="bg-[#9538E2] text-white font-bold text-sm lg:text-lg flex items-center gap-3 py-2 px-6 rounded-3xl"
+              <button 
+                onClick={() =>{ 
+                  
+                  handleAddToCart(foundProduct)}}
+                className={`${isTrueCart ? 'bg-[#cceadb]' : 'bg-[#9538E2]'} text-white font-bold text-sm lg:text-lg flex items-center gap-3 py-2 px-6 rounded-3xl`} disabled={!!cart.find(item=>item.product_id==productId)}
               >
                 Add To Cart
                 <div className="font-bold text-sm lg:text-xl">
@@ -103,9 +107,13 @@ const ProductDetail = () => {
               </button>
 
               <button
-                disabled={wishlistDisabled}
-                onClick={() => handleAddToWishList(foundProduct)}
-                className="bg-slate-100 px-3 py-3 rounded-3xl text-2xl font-bold"
+               
+                onClick={() => {
+                 
+                  handleAddToWishList(foundProduct)
+                }}
+                className={`${isTrueWishList ? 'bg-slate-50 text-gray-300': 'bg-slate-300'} px-3 py-3 rounded-3xl text-2xl font-bold`}
+                disabled={wishList.find(item=>item.product_id==productId)}
               >
                 <FaRegHeart />
               </button>

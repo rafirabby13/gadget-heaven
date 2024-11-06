@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaRegHeart } from "react-icons/fa";
 import ReactStars from "react-rating-stars-component";
 import { CartContext } from "../Root/Root.jsx";
@@ -9,8 +9,9 @@ import { IoCartOutline } from "react-icons/io5";
 
 const ArrivalProduct = ({ product }) => {
 //   console.log(product);
-  const { handleAddToCart, handleAddToWishList, wishlistDisabled } =
+  const { handleAddToCart, handleAddToWishList, wishlistDisabled ,setCartDisabled, cartDisabled, setWishlistDisabled, } =
     useContext(CartContext);
+    const [isDisabled, setIsDisabled] = useState(false);
   const {
     product_title,
     product_image,
@@ -24,11 +25,23 @@ const ArrivalProduct = ({ product }) => {
     availability,
     rating,
   } = product;
+  useEffect(() => {
+    // Reset or set the cartDisabled and wishlistDisabled states when this product component is loaded
+    if (!cartDisabled[product.product_id]) {
+      setCartDisabled(prev => ({ ...prev, [product.product_id]: false }));
+    }
+    if (!wishlistDisabled[product.product_id]) {
+      setWishlistDisabled(prev => ({ ...prev, [product.product_id]: false }));
+    }
+  }, [product.product_id, cartDisabled, wishlistDisabled, setCartDisabled, setWishlistDisabled]);
+
+  
+
   return (
     <div className="">
-      <div className="border-2 bg-[#ffffff] rounded-2xl  gap-6  mx-auto lg:p-2 xl:p-6 py-2 lg:py-5 ">
+      <div className="border-2 bg-[#ffffff] rounded-2xl  gap-6  h-full  mx-auto lg:p-2 xl:p-6 py-2 lg:py-5 ">
         <div
-          className="grid  items-center gap-8
+          className="flex flex-col h-full justify-between gap-8
         "
         >
           <img
@@ -49,7 +62,7 @@ const ArrivalProduct = ({ product }) => {
               </div>
               <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
                 <div className="badge py-2 lg:py-5 px-2 xl:px-3  badge-secondary lg:text-lg text-xs font-bold">Warranty: {warranty}</div>
-                <div className="badge py-2 lg:py-5 px-2 xl:px-3 badge-secondary lg:text-lg text-xs font-bold">{discount}</div>
+                {/* <div className="badge py-2 lg:py-5 px-2 xl:px-3 badge-secondary lg:text-lg text-xs font-bold">{discount}</div> */}
               </div>
             </div>
 
@@ -94,25 +107,7 @@ const ArrivalProduct = ({ product }) => {
                 {rating}
               </h1>
             </div>
-            <div className="flex items-center gap-5">
-              <button
-                onClick={() => handleAddToCart(product)}
-                className="bg-[#9538E2] text-white font-bold text-sm lg:text-lg flex items-center gap-3 py-2 px-6 rounded-3xl"
-              >
-                Add To Cart
-                <div className="font-bold text-sm lg:text-xl">
-                  <IoCartOutline />
-                </div>
-              </button>
-
-              <button
-                disabled={wishlistDisabled}
-                onClick={() => handleAddToWishList(product)}
-                className="bg-slate-100 px-3 py-3 rounded-3xl text-2xl font-bold"
-              >
-                <FaRegHeart />
-              </button>
-            </div>
+            
           </div>
         </div>
       </div>
