@@ -8,10 +8,11 @@
     "discount": "10% off",
     "description": "A powerful tablet with a smooth display for multitasking.",
     "specification": ["11-inch display", "128GB storage", "Snapdragon 8 Gen 1", "5G"],
-    "availability": "Upcoming",
+    "availability": "In Stock",
     "rating": 4.7,
     "highlighted_features": ["120Hz refresh rate", "S Pen support", "Ultra-thin design"],
-    "warranty": "1 Year"
+    "warranty": "1 Year",
+    "badges": ["Best Seller", "High Demand"]
   },
   {
     "product_id": "C008",
@@ -22,10 +23,11 @@
     "discount": "15% off",
     "description": "Efficient laptop for work and everyday use.",
     "specification": ["Intel Core i5", "8GB RAM", "256GB SSD", "15.6-inch display"],
-    "availability": "Upcoming",
+    "availability": "In Stock",
     "rating": 4.6,
     "highlighted_features": ["Backlit keyboard", "High-definition display", "Lightweight"],
-    "warranty": "1 Year"
+    "warranty": "1 Year",
+    "badges": ["New Arrival", "15% Off"]
   },
   {
     "product_id": "P009",
@@ -36,10 +38,11 @@
     "discount": "5% off",
     "description": "Google's latest tablet with seamless Android experience.",
     "specification": ["10.9-inch display", "128GB storage", "Google Tensor G2", "Wi-Fi 6E"],
-    "availability": "Upcoming",
+    "availability": "In Stock",
     "rating": 4.8,
     "highlighted_features": ["Adaptive battery", "Ultra-fast performance", "Smart Display mode"],
-    "warranty": "6 Months"
+    "warranty": "6 Months",
+    "badges": ["Top Rated", "Hot Item"]
   },
   {
     "product_id": "SW009",
@@ -50,10 +53,11 @@
     "discount": "10% off",
     "description": "Stylish smartwatch with comprehensive health tracking.",
     "specification": ["1.43-inch AMOLED", "Heart rate monitor", "GPS", "ECG support"],
-    "availability": "Upcoming",
+    "availability": "In Stock",
     "rating": 4.7,
     "highlighted_features": ["Long battery life", "Premium design", "Waterproof"],
-    "warranty": "2 Years"
+    "warranty": "2 Years",
+    "badges": ["Editor's Choice", "Trending"]
   },
   {
     "product_id": "PB009",
@@ -64,10 +68,11 @@
     "discount": "8% off",
     "description": "High-capacity power bank suitable for outdoor activities.",
     "specification": ["50000mAh", "USB-C PD", "Water-resistant"],
-    "availability": "Upcoming",
+    "availability": "In Stock",
     "rating": 4.8,
     "highlighted_features": ["Ultra-durable build", "Fast charging", "LED power indicator"],
-    "warranty": "1 Year"
+    "warranty": "1 Year",
+    "badges": ["Customer Favorite", "Outdoor Essential"]
   },
   {
     "product_id": "CH009",
@@ -78,9 +83,10 @@
     "discount": "12% off",
     "description": "Dual charger for iPhone and Apple Watch.",
     "specification": ["15W", "MagSafe", "Foldable design"],
-    "availability": "Upcoming",
+    "availability": "In Stock",
     "rating": 4.6,
     "highlighted_features": ["Compact & foldable", "Magnetic alignment", "Wireless charging"],
-    "warranty": "1 Year"
+    "warranty": "1 Year",
+    "badges": ["Compact Design", "12% Off"]
   }
 ]

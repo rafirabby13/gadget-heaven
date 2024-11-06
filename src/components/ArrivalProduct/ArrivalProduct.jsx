@@ -24,6 +24,7 @@ const ArrivalProduct = ({ product }) => {
     specification,
     availability,
     rating,
+    badges,
     product_id
   } = product;
   
@@ -41,9 +42,9 @@ const isTrueWishList = !!wishList.find(item=>item.product_id==product_id)
         "
         >
           <img
-            className="rounded-xl h-40 lg:h-[500px] w-full bg-slate-100 "
+            className="rounded-xl h-40 lg:h-[500px] w-full bg-slate-100 transition duration-300 ease-in-out hover:scale-110"
             src={product_image}
-            alt=""
+            alt={product_title}
           />
           <div className="space-y-1 lg:space-y-3 px-4 lg:px-0">
             <h1 className="text-[#09080F] text-lg lg:text-3xl font-semibold">
@@ -57,7 +58,8 @@ const isTrueWishList = !!wishList.find(item=>item.product_id==product_id)
                 {availability}
               </div>
               <div className="flex flex-col lg:flex-row items-center justify-between gap-2">
-                <div className="badge py-2 lg:py-5 px-2 xl:px-3  badge-secondary lg:text-lg text-xs font-bold">Warranty: {warranty}</div>
+                <div className="badge py-2 lg:py-5 px-2 xl:px-3  badge-secondary lg:text-lg text-xs font-bold">{badges[0]}</div>
+                <div className="badge py-2 lg:py-5 px-2 xl:px-3  badge-secondary lg:text-lg text-xs font-bold">{badges[1]}</div>
                
               </div>
             </div>
@@ -73,7 +75,7 @@ const isTrueWishList = !!wishList.find(item=>item.product_id==product_id)
                   </li>
                 ))}
               </ol>
-              <ol className=" lg:space-y-2 text-xs lg:text-xl ">
+              <ol className=" lg:space-y-2 text-xs lg:text-xl text-[#9538E2] font-bold">
                 <h1 className="underline lg:text-xl font-semibold uppercase">
                   Highlighted Features
                 </h1>

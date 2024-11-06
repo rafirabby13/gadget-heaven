@@ -27,6 +27,15 @@ const Root = () => {
       toast.success(`${product.product_title} is added to the cart`)
       // setCartDisabled();
       console.log(cartDisabled);
+
+      const matchedData =  [...wishList].find(item=> item.product_id==product.product_id)
+      if (matchedData) {
+        const reminingData = [...wishList].filter(
+          (cartData) => cartData.product_id != product.product_id
+        );
+    setWishList(reminingData);
+
+      }
     } else {
       // setIsDisabled(false)
       
@@ -52,6 +61,7 @@ const Root = () => {
   };
   const handleRemoveItemFromWishList = (produc) => {
     // console.log(product);
+    const matchedData =  [...cart].find(item=> item.product_id==produc.product_id)
     const reminingData = [...wishList].filter(
       (cartData) => cartData.product_id != produc.product_id
     );
