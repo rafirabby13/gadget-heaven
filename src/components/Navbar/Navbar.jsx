@@ -23,7 +23,7 @@ const Navbar = () => {
         currentLoc != `/product/${id}`
           ? "bg-[rgb(149,56,226)]  text-[#FFFFFF]"
           : "bg-white"
-      }  rounded-t-3xl pt-8 lg:max-w-[90%] lg:px-10 mx-auto `}
+      }  rounded-t-3xl py-8 lg:max-w-[90%] lg:px-10 mx-auto `}
     >
       <div className="navbar-start">
         <div className="dropdown">
