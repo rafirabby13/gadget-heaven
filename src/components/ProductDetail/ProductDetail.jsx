@@ -7,6 +7,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { IoCartOutline } from "react-icons/io5";
 import { useLoaderData, useParams } from "react-router-dom";
 import { CartContext } from "../Root/Root.jsx";
+import { Helmet } from "react-helmet";
 
 const ProductDetail = () => {
   const { productId } = useParams();
@@ -30,6 +31,7 @@ const ProductDetail = () => {
 
   return (
     <div className="min-h-screen ">
+   
       <div className="bg-[#9538E2] pt-12 pb-72 lg:max-w-[90%] mx-auto">
         <div className="text-center text-white space-y-3 lg:space-y-7 lg:w-2/3 mx-auto">
           <h1 className="text-xl lg:text-6xl font-bold ">Product Details</h1>

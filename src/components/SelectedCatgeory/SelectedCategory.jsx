@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Product from "../Product/Product.jsx";
+import { Helmet } from "react-helmet";
 
 const SelectedCategory = () => {
   const { category } = useParams();
@@ -24,7 +25,9 @@ const SelectedCategory = () => {
   }, [category]);
   return (
     <div className="lg:col-span-6 xl:col-span-6">
-      
+      <Helmet>
+        <title>{category} | Gadget Heaven</title>
+      </Helmet>
 
       {
         <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-2

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./Sidebarcontent.css";
+import { Helmet } from "react-helmet";
 
 const SidebarContent = ({ category, handleCategory }) => {
   // console.log(category);
@@ -10,6 +11,7 @@ const SidebarContent = ({ category, handleCategory }) => {
 
   return (
     <div>
+      
       <NavLink
         to={`/${category.category}`}
         className={({ isActive }) =>

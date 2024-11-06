@@ -4,7 +4,7 @@ const Statistics = () => {
   return (
     <div className="min-h-screen px-32">
       <Helmet>
-        <title>Statistics | Gadget Genius</title>
+        <title>Statistics | Gadget Heaven</title>
       </Helmet>
       Statistics
     </div>

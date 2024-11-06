@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Home | Gadget Genius</title>
+        <title>Home | Gadget Heaven</title>
       </Helmet>
       <Banner />
       <div className="mt-10  lg:-mt-40">

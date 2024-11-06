@@ -8,7 +8,7 @@ const NewArrival = () => {
   return (
     <div className="min-h-screen lg:max-w-[90%] mx-auto">
         <Helmet>
-        <title>New Arrival | Gadget Genius</title>
+        <title>New Arrival | Gadget Heaven</title>
       </Helmet>
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full h-40 lg:h-[500px]">
