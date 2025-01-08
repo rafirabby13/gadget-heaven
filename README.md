@@ -24,3 +24,10 @@
 4. User can add product to the cart or wishlist by clicking 'Add To Cart' and 'the Heart Icon' respectively.
 5. User can remove any product from cart or wishlist. User can't add any particular product twice. Clicking Purchase button will show a modal and the cart and wishlist data will be cleared and user will navigate to the home page.
 
+###
+
+<h2 align="left">Run the project locally</h2>
+
+###
+
+<p align="left">1. Clone the repository.<br>2. Run npm install to install dependencies.<br>3. Set up Firebase for authentication.<br>4. Set up MongoDB For Data Storage<br>5. Use npm run dev to launch the project.</p>
