@@ -16,7 +16,7 @@
 
 # Technique used for handling and managing data- context API
 
-# 5 features of this website/project
+# features of this website/project
 
 1. Clicking to 'Shop Now' button will lead user to the Dashboard section.
 2. Products data will be filter by category according to the specific category button.
@@ -30,4 +30,4 @@
 
 ###
 
-<p align="left">1. Clone the repository.<br>2. Run npm install to install dependencies.<br>3. Set up Firebase for authentication.<br>4. Set up MongoDB For Data Storage<br>5. Use npm run dev to launch the project.</p>
+<p align="left">1. Clone the repository.<br>2. Run npm install to install dependencies.<br>3. Set up Firebase for authentication.<br>4. Use npm run dev to launch the project.</p>
